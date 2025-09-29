@@ -3,7 +3,8 @@ package fr.tp.inf112.projects.robotsim.model;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
+import java.util.Random;
+import java.util.random.*;
 import fr.tp.inf112.projects.canvas.model.Style;
 import fr.tp.inf112.projects.canvas.model.impl.RGBColor;
 import fr.tp.inf112.projects.robotsim.model.motion.Motion;
@@ -140,19 +141,23 @@ public class Robot extends Component {
 	}
 
 	private Position findFreeNeighbouringPosition() {
-		final Position targetPosition = getTargetPosition();
-		targetPosition.setyCoordinate(targetPosition.getyCoordinate()-1);
-		
-		final PositionedShape shape = new RectangularShape(targetPosition.getxCoordinate(),
-														   targetPosition.getyCoordinate(),
-				   										   2,
-				   										   2);
-		
-		if (!getFactory().hasObstacleAt(shape)) {
-			return targetPosition;
-		}
+		int[] dy = {-1, 0, 1, 0};
+		int[] dx = {0, 1, 0, -1};
 
-		return null;
+		Position currentPosition = getPosition();
+		Random rand = new Random();
+		int offset = rand.nextInt(4);
+
+		Position newPosition = new Position(currentPosition.getxCoordinate()+dx[offset]*getSpeed(), 
+											currentPosition.getyCoordinate()+dy[offset]*getSpeed());	
+
+		final PositionedShape shape = new RectangularShape(newPosition.getxCoordinate(),
+														   newPosition.getyCoordinate(),
+				   										   1,
+				   										   1);
+		if (getFactory().hasObstacleAt(shape) || getFactory().hasMobileComponentAt(shape, this)) return null;
+			
+		return newPosition;
 	}
 	
 	private void computePathToCurrentTargetComponent() {
