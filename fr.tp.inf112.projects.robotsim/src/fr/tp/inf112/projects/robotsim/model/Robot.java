@@ -122,7 +122,7 @@ public class Robot extends Component {
 	private int moveToNextPathPosition() {
 		final Motion motion = computeMotion();
 
-		int displacement = motion == null ? 0 : motion.moveToTarget();
+		int displacement = motion == null ? 0 : getFactory().moveComponent(motion, this);
 
 		if (displacement != 0) {
 			notifyObservers();
@@ -153,8 +153,8 @@ public class Robot extends Component {
 
 		final PositionedShape shape = new RectangularShape(newPosition.getxCoordinate(),
 				newPosition.getyCoordinate(),
-				1,
-				1);
+				2,
+				2);
 		if (getFactory().hasObstacleAt(shape) || getFactory().hasMobileComponentAt(shape, this)) return null;
 
 		return newPosition;

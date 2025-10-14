@@ -1,13 +1,14 @@
 package fr.tp.inf112.projects.robotsim.model;
 
 import java.io.Serializable;
+import java.util.logging.Logger;
 
 import fr.tp.inf112.projects.canvas.model.Figure;
 import fr.tp.inf112.projects.canvas.model.Style;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 import fr.tp.inf112.projects.canvas.model.Shape;
 
-public abstract class Component implements Figure, Serializable {
+public abstract class Component implements Figure, Serializable, Runnable {
 	
 	private static final long serialVersionUID = -5960950869184030220L;
 
@@ -18,6 +19,8 @@ public abstract class Component implements Figure, Serializable {
 	private final PositionedShape positionedShape;
 	
 	private final String name;
+
+	private static final Logger LOGGER = Logger.getLogger(Component.class.getName());
 
 	protected Component(final Factory factory,
 						final PositionedShape shape,
@@ -49,6 +52,20 @@ public abstract class Component implements Figure, Serializable {
 
 	protected Factory getFactory() {
 		return factory;
+	}
+
+	@Override
+	public void run() {
+		while (isSimulationStarted()) {
+			behave();
+
+			try {
+				Thread.sleep(50);
+			}
+			catch (final InterruptedException ex) {
+				LOGGER.info("Simulation was abruptely interrupted");
+			}
+		}
 	}
 
 	@Override

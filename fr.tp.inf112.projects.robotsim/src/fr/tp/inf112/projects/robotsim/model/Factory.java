@@ -10,7 +10,7 @@ import fr.tp.inf112.projects.canvas.controller.Observer;
 import fr.tp.inf112.projects.canvas.model.Canvas;
 import fr.tp.inf112.projects.canvas.model.Figure;
 import fr.tp.inf112.projects.canvas.model.Style;
-import fr.tp.inf112.projects.robotsim.model.path.AbstractFactoryPathFinder;
+import fr.tp.inf112.projects.robotsim.model.motion.Motion;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 
@@ -107,16 +107,7 @@ public class Factory extends Component implements Canvas, Observable {
 			this.simulationStarted = true;
 			notifyObservers();
 
-			while (isSimulationStarted()) {
-				behave();
-				
-				try {
-					Thread.sleep(100);
-				}
-				catch (final InterruptedException ex) {
-					LOGGER.info("Simulation was abruptely interrupted");
-				}
-			}
+			behave();
 		}
 	}
 
@@ -133,7 +124,9 @@ public class Factory extends Component implements Canvas, Observable {
 		boolean behaved = true;
 		
 		for (final Component component : getComponents()) {
-			behaved = component.behave() || behaved;
+			//behaved = component.behave() || behaved;
+			Thread thread = new Thread(component);
+			thread.start();
 		}
 		
 		return behaved;
@@ -187,5 +180,18 @@ public class Factory extends Component implements Canvas, Observable {
 		}
 		
 		return null;
+	}
+
+	public synchronized int moveComponent(final Motion motion, final Component componentToMove) {
+		Position target = motion.getTargetPosition();
+
+		final PositionedShape shape = new RectangularShape(target.getxCoordinate(),
+				target.getyCoordinate(),
+				2,
+				2);
+
+		if (hasMobileComponentAt(shape, componentToMove)) return 0;
+
+		return motion.moveToTarget();
 	}
 }
