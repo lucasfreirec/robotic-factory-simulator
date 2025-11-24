@@ -27,7 +27,6 @@ public class Robot extends Component {
     
     private int speed;
     
-    @JsonIgnore
     private List<Component> targetComponents;
     
     @JsonIgnore
@@ -99,8 +98,7 @@ public class Robot extends Component {
         return memorizedTargetPosition;
     }
     
-    @JsonIgnore
-    private List<Component> getTargetComponents() {
+    public List<Component> getTargetComponents() {
         if (targetComponents == null) {
             targetComponents = new ArrayList<>();
         }

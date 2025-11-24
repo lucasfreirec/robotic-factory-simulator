@@ -27,6 +27,7 @@ import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 public class RemoteSimulatorController extends SimulatorController {
 
     private static final Logger LOGGER = Logger.getLogger(RemoteSimulatorController.class.getName());
+    
     private static final String SERVICE_URL = "http://localhost:8181/simulation";
     
     private final HttpClient httpClient;
@@ -36,6 +37,7 @@ public class RemoteSimulatorController extends SimulatorController {
 
     public RemoteSimulatorController(Factory factoryModel, CanvasPersistenceManager persistenceManager) {
         super(factoryModel, persistenceManager);
+        
         this.httpClient = HttpClient.newHttpClient();
         this.objectMapper = createConfiguredObjectMapper();
     }
@@ -70,10 +72,8 @@ public class RemoteSimulatorController extends SimulatorController {
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
             if (response.statusCode() == 200 && Boolean.parseBoolean(response.body())) {
-                this.isRunning = true;
-                new Thread(() -> {
-                    updateViewerLoop();
-                }).start();
+                isRunning = true;
+                new Thread(() -> updateViewerLoop()).start();
             } else {
                 LOGGER.severe("Failed to start remote simulation. Code: " + response.statusCode());
             }
@@ -85,7 +85,7 @@ public class RemoteSimulatorController extends SimulatorController {
 
     @Override
     public void stopAnimation() {
-        this.isRunning = false;
+        isRunning = false;
         try {
             String factoryId = getFactory().getId();
             String encodedId = Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
@@ -105,10 +105,10 @@ public class RemoteSimulatorController extends SimulatorController {
     }
 
     private void updateViewerLoop() {
-        while (this.isRunning) { 
+        while (isRunning) { 
             try {
                 String factoryId = getFactory().getId();
-                String encodedId = Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
+                String encodedId = java.util.Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
                 
                 HttpRequest request = HttpRequest.newBuilder()
                         .uri(new URI(SERVICE_URL + "/" + encodedId))
@@ -116,69 +116,47 @@ public class RemoteSimulatorController extends SimulatorController {
                         .build();
 
                 HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-
+                
+                
                 if (response.statusCode() == 200) {
+                	LOGGER.info("JSON RECEBIDO: " + response.body());
                     Factory remoteFactory = objectMapper.readValue(response.body(), Factory.class);
-                    
-                    if (!remoteFactory.isSimulationStarted()) {
-                        this.isRunning = false;
-                        updateLocalModel(remoteFactory);
+                   
+                    if (!remoteFactory.isSimulationStarted()) { 
+                        isRunning = false;
                         break;
                     }
                     
-                    updateLocalModel(remoteFactory);
-                } else {
-                    LOGGER.warning("Fail to find update: " + response.statusCode());
+                    SwingUtilities.invokeLater(() -> setCanvas(remoteFactory));
                 }
 
                 Thread.sleep(100);
 
             } catch (Exception e) {
-                LOGGER.severe("Error:: " + e.getMessage());
-                e.printStackTrace(); 
-                try { Thread.sleep(1000); } catch (InterruptedException ie) {} 
+                LOGGER.severe("Erro no loop: " + e.getMessage());
+                try { Thread.sleep(1000); } catch (InterruptedException ie) {}
             }
         }
-    }
-
-    private void updateLocalModel(Factory remoteFactory) {
-        SwingUtilities.invokeLater(() -> {
-            try {
-                Factory localFactory = (Factory) getCanvas();
-
-                if (localFactory == null) {
-                    setCanvas(remoteFactory);
-                    return;
-                }
-
-                if (remoteFactory.isSimulationStarted() && !localFactory.isSimulationStarted()) {
-                    localFactory.startSimulation();
-                } else if (!remoteFactory.isSimulationStarted() && localFactory.isSimulationStarted()) {
-                    localFactory.stopSimulation();
-                }
-
-                localFactory.getComponents().clear();
-                localFactory.getComponents().addAll(remoteFactory.getComponents());
-
-                for (Component c : localFactory.getComponents()) {
-                    c.setFactory(localFactory);
-                }
-
-                localFactory.notifyObservers();
-                
-            } catch (Exception e) {
-                LOGGER.severe("Erro ao atualizar interface gráfica: " + e.getMessage());
-                e.printStackTrace();
-            }
-        });
     }
 
     @Override
     public void setCanvas(final Canvas canvasModel) {
-        super.setCanvas(canvasModel);
-        if (getFactory() != null) {
-             getFactory().notifyObservers();
+        Factory currentFactory = getFactory();
+        
+        if (currentFactory == null) {
+            super.setCanvas(canvasModel);
+            return;
         }
+
+        final List<Observer> observers = currentFactory.getObservers();
+        
+        super.setCanvas(canvasModel); 
+        
+        for (final Observer observer : observers) {
+            getFactory().addObserver(observer);
+        }
+        
+        getFactory().notifyObservers();
     }
     
     private Factory getFactory() {

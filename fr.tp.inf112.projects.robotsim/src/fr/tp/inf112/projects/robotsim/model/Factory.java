@@ -17,6 +17,7 @@ import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Factory extends Component implements Canvas, Observable {
 
@@ -30,7 +31,7 @@ public class Factory extends Component implements Canvas, Observable {
     @JsonIgnore
     private transient List<Observer> observers;
     
-    @JsonInclude 
+    @JsonProperty("simulationStarted")
     private boolean simulationStarted;
 
     private static final Logger LOGGER = Logger.getLogger(Factory.class.getName());
@@ -113,6 +114,10 @@ public class Factory extends Component implements Canvas, Observable {
     
     public boolean isSimulationStarted() {
         return simulationStarted;
+    }
+    
+    public void setSimulationStarted(boolean simulationStarted) {
+        this.simulationStarted = simulationStarted;
     }
 
     public void startSimulation() {
