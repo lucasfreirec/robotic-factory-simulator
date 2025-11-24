@@ -12,10 +12,12 @@ import fr.tp.inf112.projects.robotsim.model.Position;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public abstract class AbstractFactoryPathFinder<Graph, Vertex> implements FactoryPathFinder, Serializable {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 3864762720560889146L;
 
@@ -23,7 +25,13 @@ public abstract class AbstractFactoryPathFinder<Graph, Vertex> implements Factor
 	
 	private final int resolution;
 
+	@JsonIgnore
 	private transient Graph graph;
+
+	public AbstractFactoryPathFinder() {
+		this.factoryModel = null;
+		this.resolution = 0;
+	}
 
 	public AbstractFactoryPathFinder(final Factory factoryModel,
 									 final int resolution) {
@@ -46,7 +54,7 @@ public abstract class AbstractFactoryPathFinder<Graph, Vertex> implements Factor
 
 	private static final Logger LOGGER = Logger.getLogger(AbstractFactoryPathFinder.class.getName());
 
-	protected void buildGraph() {
+	public void buildGraph() {
 		if (getGraph() == null) {
 			graph = newGraph();
 			final int xSize = getFactoryModel().getWidth() / getResolution();
@@ -71,7 +79,7 @@ public abstract class AbstractFactoryPathFinder<Graph, Vertex> implements Factor
 				}
 			}
 			
-			LOGGER.info(graph.toString());
+			LOGGER.fine(graph.toString());
 		}
 	}
 	
@@ -146,7 +154,7 @@ public abstract class AbstractFactoryPathFinder<Graph, Vertex> implements Factor
 	}
 	
 	private Vertex getBackwardxVertex(final int xIndex,
-								      final int yIndex) {
+								 	  final int yIndex) {
 		final int searchedxIndex = xIndex - 1;
 		
 		if (searchedxIndex >= 0) {
@@ -209,19 +217,19 @@ public abstract class AbstractFactoryPathFinder<Graph, Vertex> implements Factor
 	
 	protected Vertex getVertex(final Position position) {
 		float currentMaxOverlayedSurface = 0.0f;
-		Vertex maxOverlayedSurfaceVertex = null; 
-		final PositionedShape shape = new RectangularShape(position.getxCoordinate(), 
-														   position.getyCoordinate(),
-														   resolution,
-														   resolution);
+		Vertex maxOverlayedSurfaceVertex = null;	
+		final PositionedShape shape = new RectangularShape(position.getxCoordinate(),	
+														  position.getyCoordinate(),
+														  resolution,
+														  resolution);
 		
-		final  Iterator<? extends Vertex> vertexesIterator = getGraphVertexesIterator();
+		final	 Iterator<? extends Vertex> vertexesIterator = getGraphVertexesIterator();
 		
 		while (vertexesIterator.hasNext()) {
 			final Vertex vertex = vertexesIterator.next();
 			final float overlayedSurface = overlayedSurface(vertex, shape);
 			
-			if (overlayedSurface  > currentMaxOverlayedSurface) {
+			if (overlayedSurface	 > currentMaxOverlayedSurface) {
 				currentMaxOverlayedSurface = overlayedSurface;
 				maxOverlayedSurfaceVertex = vertex;
 			}
@@ -230,7 +238,7 @@ public abstract class AbstractFactoryPathFinder<Graph, Vertex> implements Factor
 		return maxOverlayedSurfaceVertex;
 	}
 	
-	protected abstract float overlayedSurface(Vertex vertex, 
+	protected abstract float overlayedSurface(Vertex vertex,	
 											  PositionedShape shape);
 	
 	protected abstract Iterator<? extends Vertex> getGraphVertexesIterator();

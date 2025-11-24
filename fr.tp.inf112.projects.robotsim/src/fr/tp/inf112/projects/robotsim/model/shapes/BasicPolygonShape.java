@@ -6,6 +6,8 @@ import java.util.Set;
 import fr.tp.inf112.projects.canvas.model.PolygonShape;
 import fr.tp.inf112.projects.canvas.model.Vertex;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class BasicPolygonShape extends PositionedShape implements PolygonShape {
 	
 	private static final long serialVersionUID = -1764316101910546849L;
@@ -44,7 +46,9 @@ public class BasicPolygonShape extends PositionedShape implements PolygonShape {
 		setyCoordinate(minyCoordinate);
 	}
 	
+
 	@Override
+	@JsonIgnore
 	public int getWidth() {
 		int minCoordinate = Integer.MAX_VALUE;
 		int maxCoordinate = 0;
@@ -60,6 +64,7 @@ public class BasicPolygonShape extends PositionedShape implements PolygonShape {
 	}
 
 	@Override
+	@JsonIgnore
 	public int getHeight() {
 		int minCoordinate = Integer.MAX_VALUE;
 		int maxCoordinate = 0;

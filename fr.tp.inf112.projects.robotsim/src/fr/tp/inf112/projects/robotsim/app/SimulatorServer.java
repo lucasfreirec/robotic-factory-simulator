@@ -19,7 +19,7 @@ public class SimulatorServer {
 
             while (true) {
                 try (Socket clientSocket = serverSocket.accept()) {
-                    System.out.println("Conexao aceita ");
+                    LOGGER.info("Connection accepted");
                     InputStream buffInput = new BufferedInputStream(clientSocket.getInputStream());
                     OutputStream buffOutput = new BufferedOutputStream(clientSocket.getOutputStream());
 
@@ -30,12 +30,12 @@ public class SimulatorServer {
 
                     FactoryPersistenceManager persistenceManager = new FactoryPersistenceManager(null);
                     if (unkObj instanceof String) {
-                        System.out.println("opcao de read");
+                        LOGGER.info("Read option choosed");
                         Canvas data = persistenceManager.read((String) unkObj);
                         objOutStream.writeObject(data);
                         objOutStream.flush();
                     } else if (unkObj instanceof Factory) {
-                        System.out.println("opcao de persist");
+                        LOGGER.info("Persist option choosed");
                         persistenceManager.persist((Factory) unkObj);
                     } else {
                         LOGGER.info("The type of object sent to the server is invalid.");
@@ -44,7 +44,8 @@ public class SimulatorServer {
                     System.out.println("Closing connection.");
                 }
                 catch (IOException ex) {
-                    LOGGER.info("Server communication problem.");
+                    LOGGER.severe("Server communication problem: " + ex.getMessage());
+                    ex.printStackTrace();
                 } catch (ClassNotFoundException e) {
                     LOGGER.info("Deserialization Class not found.");
                 }

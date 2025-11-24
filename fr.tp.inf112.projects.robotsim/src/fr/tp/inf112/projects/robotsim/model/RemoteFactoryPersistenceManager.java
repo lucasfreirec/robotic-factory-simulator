@@ -3,12 +3,15 @@ package fr.tp.inf112.projects.robotsim.model;
 import fr.tp.inf112.projects.canvas.model.Canvas;
 import fr.tp.inf112.projects.canvas.model.CanvasChooser;
 import fr.tp.inf112.projects.canvas.model.impl.AbstractCanvasPersistenceManager;
+import fr.tp.inf112.projects.robotsim.app.SimulatorServer;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.logging.Logger;
 
 public class RemoteFactoryPersistenceManager extends AbstractCanvasPersistenceManager {
-
+	
+    private static final Logger LOGGER = Logger.getLogger(SimulatorServer.class.getName());
     final private String serverHost = "localhost";
     final private int serverPort = 8000;
 
@@ -50,12 +53,12 @@ public class RemoteFactoryPersistenceManager extends AbstractCanvasPersistenceMa
         try (
                 Socket socket = new Socket(serverHost, serverPort);
         ) {
-            System.out.println("conectado no persist");
+            LOGGER.info("Connected on persist");
             final OutputStream bufOutputStream = new BufferedOutputStream(socket.getOutputStream());
             final ObjectOutputStream objectOutputStream = new ObjectOutputStream(bufOutputStream);
             objectOutputStream.writeObject(canvasModel);
             objectOutputStream.flush();
-            System.out.println("escrita+flush");
+            LOGGER.info("Write+Flush");
         }
     }
 

@@ -7,11 +7,13 @@ import fr.tp.inf112.projects.canvas.model.Style;
 import fr.tp.inf112.projects.canvas.model.Stroke;
 import fr.tp.inf112.projects.canvas.model.impl.RGBColor;
 
-public class ComponentStyle implements Style, Stroke, Serializable {
-	
-	private static final long serialVersionUID = -782486828505388494L;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-	public static final ComponentStyle DEFAULT = new ComponentStyle();
+public class ComponentStyle implements Style, Stroke, Serializable {
+    
+    private static final long serialVersionUID = -782486828505388494L;
+
+    public static final ComponentStyle DEFAULT = new ComponentStyle();
 
     public static final ComponentStyle DEFAULT_BLACK = new ComponentStyle(RGBColor.BLACK, null, (short) -1, null);
 
@@ -30,54 +32,74 @@ public class ComponentStyle implements Style, Stroke, Serializable {
     private float lineThickness;
     
     final float[] dashPattern;
-	
-	public ComponentStyle() {
-		this(null);
-	}
+    
+    public ComponentStyle() {
+        this(null);
+    }
 
-	public ComponentStyle(final float lineThickness) {
-		this(null, null, lineThickness, null);
-	}
+    public ComponentStyle(final float lineThickness) {
+        this(null, null, lineThickness, null);
+    }
 
-	public ComponentStyle(final float[] dashPattern) {
-		this(null, null, 1.0f, dashPattern);
-	}
+    public ComponentStyle(final float[] dashPattern) {
+        this(null, null, 1.0f, dashPattern);
+    }
 
-	public ComponentStyle(final Color backgroundColor,
-						  final Color lineColor,
-						  final float lineThickness,
-						  final float[] dashPattern) {
-		this.backgroundColor = backgroundColor;
-		this.lineColor = lineColor;
-		this.lineThickness = lineThickness;
-		this.dashPattern = dashPattern == null ? null : dashPattern.clone();
-	}
+    public ComponentStyle(final Color backgroundColor,
+                          final Color lineColor,
+                          final float lineThickness,
+                          final float[] dashPattern) {
+        this.backgroundColor = backgroundColor;
+        this.lineColor = lineColor;
+        this.lineThickness = lineThickness;
+        this.dashPattern = dashPattern == null ? null : dashPattern.clone();
+    }
 
-	@Override
-	public Color getBackgroundColor() {
-		return backgroundColor;
-	}
+    @Override
+    public Color getBackgroundColor() {
+        return backgroundColor;
+    }
+    
+    public void setBackgroundColor(Color backgroundColor) {
+        this.backgroundColor = backgroundColor;
+    }
 
-	@Override
-	public Color getColor() {
-		return lineColor;
-	}
+    @Override
+    @JsonIgnore 
+    public Color getColor() {
+        return lineColor;
+    }
 
+    public Color getLineColor() {
+        return lineColor;
+    }
 
-	@Override
-	public Stroke getStroke() {
-		return this;
-	}
+    public void setLineColor(Color lineColor) {
+        this.lineColor = lineColor;
+    }
 
+    @Override
+    @JsonIgnore
+    public Stroke getStroke() {
+        return this;
+    }
 
-	@Override
-	public float getThickness() {
-		return lineThickness;
-	}
+    @Override
+    @JsonIgnore
+    public float getThickness() {
+        return lineThickness;
+    }
+    
+    public float getLineThickness() {
+        return lineThickness;
+    }
 
+    public void setLineThickness(float lineThickness) {
+        this.lineThickness = lineThickness;
+    }
 
-	@Override
-	public float[] getDashPattern() {
-		return dashPattern;
-	}
+    @Override
+    public float[] getDashPattern() {
+        return dashPattern;
+    }
 }

@@ -4,40 +4,44 @@ import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 
 public class ChargingStation extends Component {
-	
-	private static final long serialVersionUID = -154228412357092561L;
-	
-	private boolean charging;
+    
+    private static final long serialVersionUID = -154228412357092561L;
+    
+    private boolean charging;
 
-	public ChargingStation(final Room room,
-						   final RectangularShape shape,
-						   final String name) {
-		this(room.getFactory(), shape, name);
-	}
+    public ChargingStation() {
+        super(null, null, null);
+    }
 
-	public ChargingStation(final Factory factory,
-						   final RectangularShape shape,
-						   final String name) {
-		super(factory, shape, name);
-		
-		charging = false;
-	}
+    public ChargingStation(final Room room,
+                           final RectangularShape shape,
+                           final String name) {
+        this(room.getFactory(), shape, name);
+    }
 
-	@Override
-	public String toString() {
-		return super.toString() + "]";
-	}
+    public ChargingStation(final Factory factory,
+                           final RectangularShape shape,
+                           final String name) {
+        super(factory, shape, name);
+        
+        charging = false;
+    }
 
-	protected boolean isCharging() {
-		return charging;
-	}
+    @Override
+    public String toString() {
+        return super.toString() + "]";
+    }
 
-	protected void setCharging(boolean charging) {
-		this.charging = charging;
-	}
+    public boolean isCharging() {
+        return charging;
+    }
 
-	@Override
-	public boolean canBeOverlayed(final PositionedShape shape) {
-		return true;
-	}
+    protected void setCharging(boolean charging) {
+        this.charging = charging;
+    }
+
+    @Override
+    public boolean canBeOverlayed(final PositionedShape shape) {
+        return true;
+    }
 }

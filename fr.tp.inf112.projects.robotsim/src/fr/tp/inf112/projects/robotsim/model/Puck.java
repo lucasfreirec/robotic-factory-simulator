@@ -5,6 +5,10 @@ import fr.tp.inf112.projects.robotsim.model.shapes.CircularShape;
 public class Puck extends Component {
 
 	private static final long serialVersionUID = -2194778403928041427L;
+	
+	public Puck() {
+		super(null, null, null);
+	}
 
 	public Puck(final Factory factory,
 				final CircularShape shape,

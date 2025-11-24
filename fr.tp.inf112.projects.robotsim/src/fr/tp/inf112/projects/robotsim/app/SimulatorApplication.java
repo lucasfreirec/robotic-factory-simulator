@@ -52,7 +52,7 @@ public class SimulatorApplication {
 		conveyorShape.addVertex(new BasicVertex(xCoordinate, yCoordinate + height - baselineSize));
 
 		final Room chargingRoom = new Room(factory, new RectangularShape(125, 125, 50, 50), "Charging Room");
-		new Door(chargingRoom, Room.WALL.RIGHT, 10, 20, false, "Entrance");
+		new Door(chargingRoom, Room.WALL.RIGHT, 10, 20, true, "Entrance");
 		final ChargingStation chargingStation = new ChargingStation(factory, new RectangularShape(150, 145, 15, 15), "Charging Station");
 
 		final FactoryPathFinder jgraphPahtFinder = new JGraphTDijkstraFactoryPathFinder(factory, 5);
@@ -74,7 +74,7 @@ public class SimulatorApplication {
 			@Override
 	        public void run() {
 				final FileCanvasChooser canvasChooser = new FileCanvasChooser("factory", "Puck Factory");
-				final Component factoryViewer = new CanvasViewer(new SimulatorController(factory, new RemoteFactoryPersistenceManager(canvasChooser)));
+				final Component factoryViewer = new CanvasViewer(new RemoteSimulatorController(factory, new RemoteFactoryPersistenceManager(canvasChooser)));
 				canvasChooser.setViewer(factoryViewer);
 				//new CanvasViewer(factory);
 				robot1.addTargetComponent(machine1);

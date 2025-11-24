@@ -6,6 +6,9 @@ import java.util.List;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 import fr.tp.inf112.projects.robotsim.model.shapes.RectangularShape;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 public class Room extends Component {
 	
 	private static final long serialVersionUID = 1449569724908316962L;
@@ -14,17 +17,32 @@ public class Room extends Component {
 	
 	private static final int WALL_THICKNESS = 5;
 	
+	@JsonIgnore
 	private final PositionedShape leftWall;
 	
+	@JsonIgnore
 	private final PositionedShape rightWall;
 	
+	@JsonIgnore
 	private final PositionedShape topWall;
 	
+	@JsonIgnore
 	private final PositionedShape bottomWall;
 	
 	private final List<Area> areas;
 
 	private final List<Door> doors;
+
+	public Room() {
+		super(null, null, null);
+		leftWall = null;
+		rightWall = null;
+		topWall = null;
+		bottomWall = null;
+		
+		areas = new ArrayList<>();
+		doors = new ArrayList<>();
+	}
 
 	public Room(final Factory factory,
 				final RectangularShape shape,
@@ -58,12 +76,20 @@ public class Room extends Component {
 
 	@Override
 	public boolean overlays(final PositionedShape shape) {
+		if (leftWall == null || rightWall == null || topWall == null || bottomWall == null) {
+			return false;
+		}
+
 		return leftWall.overlays(shape) || rightWall.overlays(shape) || 
 			   topWall.overlays(shape) || bottomWall.overlays(shape);
 	}
 
 	@Override
 	public boolean canBeOverlayed(final PositionedShape shape) {
+		if (leftWall == null || rightWall == null || topWall == null || bottomWall == null) {
+			return true; 
+		}
+
 		final Door overlayedDoor = getOverlayedDoor(shape);
 		
 		if (overlayedDoor != null) {

@@ -5,6 +5,8 @@ import java.io.Serializable;
 import fr.tp.inf112.projects.canvas.model.Shape;
 import fr.tp.inf112.projects.robotsim.model.Position;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public abstract class PositionedShape implements Shape, Serializable {
 
 	private static final long serialVersionUID = 2217860927757709195L;
@@ -28,29 +30,37 @@ public abstract class PositionedShape implements Shape, Serializable {
 		return 0;
 	}
 
-	private final Position position;
-	
+	private Position position;
+
 	protected PositionedShape(final int xCoordinate,
 							  final int yCoordinate) {
 		this.position = new Position(xCoordinate, yCoordinate);
 	}
+	
+    protected PositionedShape() {
+        this.position = new Position(0, 0);
+    }
 
 	public abstract int getWidth();
 
 	public abstract int getHeight();
 	
+    @JsonIgnore
 	public boolean overlays(final PositionedShape shape) {
 		return getOverlayedSurface(shape) > 0.0f;
 	}
 	
+    @JsonIgnore
 	public float getOverlayedSurface(final PositionedShape shape) {
 		return xIntersectionLength(shape) * yIntersectionLength(shape);
 	}
 	
+    @JsonIgnore
 	protected float xIntersectionLength(final PositionedShape shape) {
 		return intersectionLength(getxCoordinate(), getWidth(), shape.getxCoordinate(), shape.getWidth());
 	}
 
+    @JsonIgnore
 	protected float yIntersectionLength(final PositionedShape shape) {
 		return intersectionLength(getyCoordinate(), getHeight(), shape.getyCoordinate(), shape.getHeight());
 	}
@@ -59,6 +69,7 @@ public abstract class PositionedShape implements Shape, Serializable {
 		return position;
 	}
 
+    @JsonIgnore
 	public int getxCoordinate() {
 		return getPosition().getxCoordinate();
 	}
@@ -67,6 +78,7 @@ public abstract class PositionedShape implements Shape, Serializable {
 		return getPosition().setxCoordinate(xCoordinate);
 	}
 	
+    @JsonIgnore
 	public int getyCoordinate() {
 		return getPosition().getyCoordinate();
 	}

@@ -1,0 +1,3651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-11-23T15:11:50.647905626Z</date>
+  <millis>1763910710647</millis>
+  <nanos>905626</nanos>
+  <sequence>0</sequence>
+  <logger>fr.tp.inf112.projects.robotsim.app.SimulatorApplication</logger>
+  <level>INFO</level>
+  <class>fr.tp.inf112.projects.robotsim.app.SimulatorApplication</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting the robot simulator...</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:50.776420336Z</date>
+  <millis>1763910710776</millis>
+  <nanos>420336</nanos>
+  <sequence>1</sequence>
+  <logger>fr.tp.inf112.projects.robotsim.app.SimulatorApplication</logger>
+  <level>CONFIG</level>
+  <class>fr.tp.inf112.projects.robotsim.app.SimulatorApplication</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>With parameters [].</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:50.977463738Z</date>
+  <millis>1763910710977</millis>
+  <nanos>463738</nanos>
+  <sequence>2</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>setupModifierMap</method>
+  <thread>1</thread>
+  <message>In setupModifierMap</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:50.981902036Z</date>
+  <millis>1763910710981</millis>
+  <nanos>902036</nanos>
+  <sequence>3</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>setupModifierMap</method>
+  <thread>1</thread>
+  <message>metaMask = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:50.983062341Z</date>
+  <millis>1763910710983</millis>
+  <nanos>62341</nanos>
+  <sequence>4</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>setupModifierMap</method>
+  <thread>1</thread>
+  <message>altMask = 8</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:50.984075582Z</date>
+  <millis>1763910710984</millis>
+  <nanos>75582</nanos>
+  <sequence>5</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>setupModifierMap</method>
+  <thread>1</thread>
+  <message>numLockMask = 16</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:50.985140444Z</date>
+  <millis>1763910710985</millis>
+  <nanos>140444</nanos>
+  <sequence>6</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>setupModifierMap</method>
+  <thread>1</thread>
+  <message>modeSwitchMask = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:50.986016831Z</date>
+  <millis>1763910710986</millis>
+  <nanos>16831</nanos>
+  <sequence>7</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>setupModifierMap</method>
+  <thread>1</thread>
+  <message>modLockIsShiftLock = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:50.986801935Z</date>
+  <millis>1763910710986</millis>
+  <nanos>801935</nanos>
+  <sequence>8</sequence>
+  <logger>sun.awt.X11.backingStore.XToolkit</logger>
+  <level>CONFIG</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>setBackingStoreType</method>
+  <thread>1</thread>
+  <message>The system property sun.awt.backingStore is not set, by default backingStore=NotUseful</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.046824391Z</date>
+  <millis>1763910711046</millis>
+  <nanos>824391</nanos>
+  <sequence>9</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>detect</method>
+  <thread>1</thread>
+  <message>### sun.awt.X11.XNETProtocol@34033bd0 is active: true</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.049780437Z</date>
+  <millis>1763910711049</millis>
+  <nanos>780437</nanos>
+  <sequence>10</sequence>
+  <logger>sun.awt.X11.XWM</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWM</class>
+  <method>getWMID</method>
+  <thread>1</thread>
+  <message>_NET_WM_NAME is GNOME Shell</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.053479560Z</date>
+  <millis>1763910711053</millis>
+  <nanos>479560</nanos>
+  <sequence>11</sequence>
+  <logger>sun.awt.X11.XWINProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWINProtocol</class>
+  <method>detect</method>
+  <thread>1</thread>
+  <message>### sun.awt.X11.XWINProtocol@28864e92 is active: false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.054934277Z</date>
+  <millis>1763910711054</millis>
+  <nanos>934277</nanos>
+  <sequence>12</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>isWMName</method>
+  <thread>1</thread>
+  <message>### WM_NAME = GNOME Shell</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.055732268Z</date>
+  <millis>1763910711055</millis>
+  <nanos>732268</nanos>
+  <sequence>13</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>isWMName</method>
+  <thread>1</thread>
+  <message>### WM_NAME = GNOME Shell</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.056459380Z</date>
+  <millis>1763910711056</millis>
+  <nanos>459380</nanos>
+  <sequence>14</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>isWMName</method>
+  <thread>1</thread>
+  <message>### WM_NAME = GNOME Shell</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.059060889Z</date>
+  <millis>1763910711059</millis>
+  <nanos>60889</nanos>
+  <sequence>15</sequence>
+  <logger>sun.awt.X11.XProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XProtocol</class>
+  <method>checkProtocol</method>
+  <thread>1</thread>
+  <message>sun.awt.X11.XNETProtocol@34033bd0:_NET_SUPPORTED:296 supports [_NET_WM_NAME:297, 298, _NET_WM_STATE:299, _NET_WM_STATE_MAXIMIZED_HORZ:300, _NET_WM_STATE_MAXIMIZED_VERT:301, 302, 303, 304, _NET_WM_WINDOW_TYPE:305, 306, 307, 308, 309, _NET_WM_WINDOW_TYPE_UTILITY:310, 311, _NET_WM_WINDOW_TYPE_DIALOG:312, 313, _NET_WM_WINDOW_TYPE_POPUP_MENU:314, 315, 316, 317, 318, _NET_WM_WINDOW_TYPE_NORMAL:319, 271, 272, 273, 274, 352, _NET_FRAME_EXTENTS:353, _NET_REQUEST_FRAME_EXTENTS:354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, _NET_WM_WINDOW_OPACITY:370, 371, 372, _NET_WM_STATE_MODAL:320, 321, 322, _NET_WM_STATE_SKIP_TASKBAR:323, _NET_WM_STATE_SKIP_PAGER:324, 325, 326, 327, _NET_ACTIVE_WINDOW:328, 329, _NET_WM_STATE_HIDDEN:330, _NET_WM_STATE_FULLSCREEN:331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, _NET_WM_STATE_ABOVE:347, _NET_WM_STATE_BELOW:348, 349, 350, 351]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.070332706Z</date>
+  <millis>1763910711070</millis>
+  <nanos>332706</nanos>
+  <sequence>16</sequence>
+  <logger>sun.awt.X11.XWM</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWM</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Window manager: Mutter</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.213633019Z</date>
+  <millis>1763910711213</millis>
+  <nanos>633019</nanos>
+  <sequence>17</sequence>
+  <logger>java.lang.ProcessBuilder</logger>
+  <level>FINE</level>
+  <class>java.lang.ProcessBuilder</class>
+  <method>start</method>
+  <thread>24</thread>
+  <message>ProcessBuilder.start(): pid: 80706, dir: null, cmd: "/usr/bin/gnome-shell"</message>
+  <exception>
+    <message>java.lang.RuntimeException: ProcessBuilder.start() debug</message>
+    <frame>
+      <class>java.lang.ProcessBuilder</class>
+      <method>start</method>
+      <line>1147</line>
+    </frame>
+    <frame>
+      <class>java.lang.ProcessBuilder</class>
+      <method>start</method>
+      <line>1089</line>
+    </frame>
+    <frame>
+      <class>sun.awt.UNIXToolkit</class>
+      <method>getGnomeShellMajorVersion</method>
+      <line>286</line>
+    </frame>
+    <frame>
+      <class>sun.awt.screencast.XdgDesktopPortal</class>
+      <method>&lt;clinit&gt;</method>
+      <line>59</line>
+    </frame>
+    <frame>
+      <class>sun.awt.X11.XToolkit</class>
+      <method>getNumberOfButtons</method>
+      <line>1570</line>
+    </frame>
+    <frame>
+      <class>sun.awt.X11.XToolkit</class>
+      <method>initializeDesktopProperties</method>
+      <line>1549</line>
+    </frame>
+    <frame>
+      <class>java.awt.Toolkit</class>
+      <method>getDesktopProperty</method>
+      <line>1541</line>
+    </frame>
+    <frame>
+      <class>sun.swing.SwingUtilities2</class>
+      <method>putAATextInfo</method>
+      <line>175</line>
+    </frame>
+    <frame>
+      <class>javax.swing.plaf.metal.MetalLookAndFeel</class>
+      <method>initComponentDefaults</method>
+      <line>1530</line>
+    </frame>
+    <frame>
+      <class>javax.swing.plaf.basic.BasicLookAndFeel</class>
+      <method>getDefaults</method>
+      <line>161</line>
+    </frame>
+    <frame>
+      <class>javax.swing.plaf.metal.MetalLookAndFeel</class>
+      <method>getDefaults</method>
+      <line>1564</line>
+    </frame>
+    <frame>
+      <class>javax.swing.UIManager</class>
+      <method>setLookAndFeel</method>
+      <line>591</line>
+    </frame>
+    <frame>
+      <class>javax.swing.UIManager</class>
+      <method>setLookAndFeel</method>
+      <line>633</line>
+    </frame>
+    <frame>
+      <class>javax.swing.UIManager</class>
+      <method>initializeDefaultLAF</method>
+      <line>1408</line>
+    </frame>
+    <frame>
+      <class>javax.swing.UIManager</class>
+      <method>initialize</method>
+      <line>1521</line>
+    </frame>
+    <frame>
+      <class>javax.swing.UIManager</class>
+      <method>maybeInitialize</method>
+      <line>1487</line>
+    </frame>
+    <frame>
+      <class>javax.swing.UIManager</class>
+      <method>getUI</method>
+      <line>1060</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JPanel</class>
+      <method>updateUI</method>
+      <line>129</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JPanel</class>
+      <method>&lt;init&gt;</method>
+      <line>89</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JPanel</class>
+      <method>&lt;init&gt;</method>
+      <line>112</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JPanel</class>
+      <method>&lt;init&gt;</method>
+      <line>120</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JRootPane</class>
+      <method>createGlassPane</method>
+      <line>509</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JRootPane</class>
+      <method>&lt;init&gt;</method>
+      <line>336</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JFrame</class>
+      <method>createRootPane</method>
+      <line>279</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JFrame</class>
+      <method>frameInit</method>
+      <line>258</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JFrame</class>
+      <method>&lt;init&gt;</method>
+      <line>181</line>
+    </frame>
+    <frame>
+      <class>fr.tp.inf112.projects.canvas.view.CanvasViewer</class>
+      <method>&lt;init&gt;</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>fr.tp.inf112.projects.canvas.view.CanvasViewer</class>
+      <method>&lt;init&gt;</method>
+      <line>32</line>
+    </frame>
+    <frame>
+      <class>fr.tp.inf112.projects.robotsim.app.SimulatorApplication$1</class>
+      <method>run</method>
+      <line>77</line>
+    </frame>
+    <frame>
+      <class>java.awt.event.InvocationEvent</class>
+      <method>dispatch</method>
+      <line>318</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEventImpl</method>
+      <line>773</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>720</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>714</line>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>400</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>87</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEvent</method>
+      <line>742</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpOneEventForFilters</method>
+      <line>203</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForFilter</method>
+      <line>124</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForHierarchy</method>
+      <line>113</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>109</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>101</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>run</method>
+      <line>90</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.387660867Z</date>
+  <millis>1763910711387</millis>
+  <nanos>660867</nanos>
+  <sequence>18</sequence>
+  <logger>sun.awt.X11.XAWTXSettings</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XAWTXSettings</class>
+  <method>initXSettings</method>
+  <thread>24</thread>
+  <message>Initializing XAWT XSettings</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.391815398Z</date>
+  <millis>1763910711391</millis>
+  <nanos>815398</nanos>
+  <sequence>19</sequence>
+  <logger>sun.awt.X11.XMSelection</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XMSelection</class>
+  <method>selectPerScreen</method>
+  <thread>24</thread>
+  <message>Grabbing XServer</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.402845595Z</date>
+  <millis>1763910711402</millis>
+  <nanos>845595</nanos>
+  <sequence>20</sequence>
+  <logger>sun.awt.X11.XMSelection</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XMSelection</class>
+  <method>selectPerScreen</method>
+  <thread>24</thread>
+  <message>Screen = 0 selection name = _XSETTINGS_S0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.409656786Z</date>
+  <millis>1763910711409</millis>
+  <nanos>656786</nanos>
+  <sequence>21</sequence>
+  <logger>sun.awt.X11.XMSelection</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XMSelection</class>
+  <method>selectPerScreen</method>
+  <thread>24</thread>
+  <message>Selection Owner for screen 0 = 2097153</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.410314464Z</date>
+  <millis>1763910711410</millis>
+  <nanos>314464</nanos>
+  <sequence>22</sequence>
+  <logger>sun.awt.X11.XMSelection</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XMSelection</class>
+  <method>selectPerScreen</method>
+  <thread>24</thread>
+  <message>UnGrabbing XServer</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.410945605Z</date>
+  <millis>1763910711410</millis>
+  <nanos>945605</nanos>
+  <sequence>23</sequence>
+  <logger>sun.awt.X11.XAWTXSettings</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XAWTXSettings</class>
+  <method>initPerScreenXSettings</method>
+  <thread>24</thread>
+  <message>Updating Per XSettings changes</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.411641950Z</date>
+  <millis>1763910711411</millis>
+  <nanos>641950</nanos>
+  <sequence>24</sequence>
+  <logger>sun.awt.X11.XAWTXSettings</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XAWTXSettings</class>
+  <method>getUpdatedSettings</method>
+  <thread>24</thread>
+  <message>owner =2097153</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.412525602Z</date>
+  <millis>1763910711412</millis>
+  <nanos>525602</nanos>
+  <sequence>25</sequence>
+  <logger>sun.awt.X11.XAWTXSettings</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XAWTXSettings</class>
+  <method>getUpdatedSettings</method>
+  <thread>24</thread>
+  <message>noItems = 2072</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.414776599Z</date>
+  <millis>1763910711414</millis>
+  <nanos>776599</nanos>
+  <sequence>26</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ShowStatusShapes value = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.415393573Z</date>
+  <millis>1763910711415</millis>
+  <nanos>393573</nanos>
+  <sequence>27</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ToolbarStyle value = both-horiz</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.415757594Z</date>
+  <millis>1763910711415</millis>
+  <nanos>757594</nanos>
+  <sequence>28</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/EnablePrimaryPaste value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.416068740Z</date>
+  <millis>1763910711416</millis>
+  <nanos>68740</nanos>
+  <sequence>29</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/FallbackIconTheme value = gnome</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.416386638Z</date>
+  <millis>1763910711416</millis>
+  <nanos>386638</nanos>
+  <sequence>30</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ColorScheme value = </message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.416675732Z</date>
+  <millis>1763910711416</millis>
+  <nanos>675732</nanos>
+  <sequence>31</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Xft/HintStyle value = hintslight</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.416972884Z</date>
+  <millis>1763910711416</millis>
+  <nanos>972884</nanos>
+  <sequence>32</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/MenuBarAccel value = F10</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.417290078Z</date>
+  <millis>1763910711417</millis>
+  <nanos>290078</nanos>
+  <sequence>33</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/RecentFilesEnabled value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.417598372Z</date>
+  <millis>1763910711417</millis>
+  <nanos>598372</nanos>
+  <sequence>34</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Xft/Hinting value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.417899993Z</date>
+  <millis>1763910711417</millis>
+  <nanos>899993</nanos>
+  <sequence>35</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/CanChangeAccels value = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.418184325Z</date>
+  <millis>1763910711418</millis>
+  <nanos>184325</nanos>
+  <sequence>36</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/DecorationLayout value = :minimize,maximize,close</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.418486177Z</date>
+  <millis>1763910711418</millis>
+  <nanos>486177</nanos>
+  <sequence>37</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/TimeoutRepeat value = 20</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.418812138Z</date>
+  <millis>1763910711418</millis>
+  <nanos>812138</nanos>
+  <sequence>38</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/RecentFilesMaxAge value = -1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.419134884Z</date>
+  <millis>1763910711419</millis>
+  <nanos>134884</nanos>
+  <sequence>39</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/AutoMnemonics value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.419462882Z</date>
+  <millis>1763910711419</millis>
+  <nanos>462882</nanos>
+  <sequence>40</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/EnableEventSounds value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.419743893Z</date>
+  <millis>1763910711419</millis>
+  <nanos>743893</nanos>
+  <sequence>41</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/EnableAnimations value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.420014204Z</date>
+  <millis>1763910711420</millis>
+  <nanos>14204</nanos>
+  <sequence>42</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/DoubleClickTime value = 400</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.420320225Z</date>
+  <millis>1763910711420</millis>
+  <nanos>320225</nanos>
+  <sequence>43</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/CursorBlinkTimeout value = 10</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.420601783Z</date>
+  <millis>1763910711420</millis>
+  <nanos>601783</nanos>
+  <sequence>44</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Xft/RGBA value = rgb</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.420871484Z</date>
+  <millis>1763910711420</millis>
+  <nanos>871484</nanos>
+  <sequence>45</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/TitlebarDoubleClick value = toggle-maximize</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.421156519Z</date>
+  <millis>1763910711421</millis>
+  <nanos>156519</nanos>
+  <sequence>46</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/IMPreeditStyle value = callback</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.421435370Z</date>
+  <millis>1763910711421</millis>
+  <nanos>435370</nanos>
+  <sequence>47</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ShellShowsAppMenu value = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.421695228Z</date>
+  <millis>1763910711421</millis>
+  <nanos>695228</nanos>
+  <sequence>48</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/SessionBusId value = ce37d6e9b48c952c537e18d6692170db</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.422117217Z</date>
+  <millis>1763910711422</millis>
+  <nanos>117217</nanos>
+  <sequence>49</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/CursorBlinkTime value = 1200</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.422482612Z</date>
+  <millis>1763910711422</millis>
+  <nanos>482612</nanos>
+  <sequence>50</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/SoundThemeName value = Yaru</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.422748006Z</date>
+  <millis>1763910711422</millis>
+  <nanos>748006</nanos>
+  <sequence>51</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/DialogsUseHeader value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.423009523Z</date>
+  <millis>1763910711423</millis>
+  <nanos>9523</nanos>
+  <sequence>52</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/FontName value = Ubuntu Sans 11</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.423323336Z</date>
+  <millis>1763910711423</millis>
+  <nanos>323336</nanos>
+  <sequence>53</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ToolbarIconSize value = large</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.423591977Z</date>
+  <millis>1763910711423</millis>
+  <nanos>591977</nanos>
+  <sequence>54</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/KeynavUseCaret value = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.423855738Z</date>
+  <millis>1763910711423</millis>
+  <nanos>855738</nanos>
+  <sequence>55</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ShellShowsDesktop value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.424126080Z</date>
+  <millis>1763910711424</millis>
+  <nanos>126080</nanos>
+  <sequence>56</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/ThemeName value = Yaru-dark</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.424390915Z</date>
+  <millis>1763910711424</millis>
+  <nanos>390915</nanos>
+  <sequence>57</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gdk/WindowScalingFactor value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.424702290Z</date>
+  <millis>1763910711424</millis>
+  <nanos>702290</nanos>
+  <sequence>58</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ButtonImages value = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.424970688Z</date>
+  <millis>1763910711424</millis>
+  <nanos>970688</nanos>
+  <sequence>59</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/IMStatusStyle value = callback</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.425282758Z</date>
+  <millis>1763910711425</millis>
+  <nanos>282758</nanos>
+  <sequence>60</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/TitlebarRightClick value = menu</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.425544292Z</date>
+  <millis>1763910711425</millis>
+  <nanos>544292</nanos>
+  <sequence>61</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/Modules value = canberra-gtk-module</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.425799214Z</date>
+  <millis>1763910711425</millis>
+  <nanos>799214</nanos>
+  <sequence>62</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/CursorBlink value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.426089005Z</date>
+  <millis>1763910711426</millis>
+  <nanos>89005</nanos>
+  <sequence>63</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/EnableInputFeedbackSounds value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.426422590Z</date>
+  <millis>1763910711426</millis>
+  <nanos>422590</nanos>
+  <sequence>64</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/DndDragThreshold value = 8</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.426679346Z</date>
+  <millis>1763910711426</millis>
+  <nanos>679346</nanos>
+  <sequence>65</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/CursorThemeName value = Yaru</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.426938718Z</date>
+  <millis>1763910711426</millis>
+  <nanos>938718</nanos>
+  <sequence>66</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/TimeoutInitial value = 200</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.427210172Z</date>
+  <millis>1763910711427</millis>
+  <nanos>210172</nanos>
+  <sequence>67</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/MenuImages value = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.427488928Z</date>
+  <millis>1763910711427</millis>
+  <nanos>488928</nanos>
+  <sequence>68</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/CursorThemeSize value = 24</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.427740274Z</date>
+  <millis>1763910711427</millis>
+  <nanos>740274</nanos>
+  <sequence>69</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/TitlebarMiddleClick value = lower</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.427984185Z</date>
+  <millis>1763910711427</millis>
+  <nanos>984185</nanos>
+  <sequence>70</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/IMModule value = ibus</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.428251105Z</date>
+  <millis>1763910711428</millis>
+  <nanos>251105</nanos>
+  <sequence>71</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/KeyThemeName value = Default</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.428506256Z</date>
+  <millis>1763910711428</millis>
+  <nanos>506256</nanos>
+  <sequence>72</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ShowInputMethodMenu value = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.428759097Z</date>
+  <millis>1763910711428</millis>
+  <nanos>759097</nanos>
+  <sequence>73</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ColorPalette value = black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.429033555Z</date>
+  <millis>1763910711429</millis>
+  <nanos>33555</nanos>
+  <sequence>74</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/ShowUnicodeMenu value = 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.429334043Z</date>
+  <millis>1763910711429</millis>
+  <nanos>334043</nanos>
+  <sequence>75</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Net/IconThemeName value = Yaru-dark</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.429596555Z</date>
+  <millis>1763910711429</millis>
+  <nanos>596555</nanos>
+  <sequence>76</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Xft/Antialias value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.429846398Z</date>
+  <millis>1763910711429</millis>
+  <nanos>846398</nanos>
+  <sequence>77</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gdk/UnscaledDPI value = 98304</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.430103316Z</date>
+  <millis>1763910711430</millis>
+  <nanos>103316</nanos>
+  <sequence>78</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Xft/DPI value = 98304</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.430353981Z</date>
+  <millis>1763910711430</millis>
+  <nanos>353981</nanos>
+  <sequence>79</sequence>
+  <logger>sun.awt.X11.XToolkit</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XToolkit</class>
+  <method>parseXSettings</method>
+  <thread>24</thread>
+  <message>name = gnome.Gtk/OverlayScrolling value = 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.468620929Z</date>
+  <millis>1763910711468</millis>
+  <nanos>620929</nanos>
+  <sequence>80</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,0x0,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]; isLightweight=false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.469452412Z</date>
+  <millis>1763910711469</millis>
+  <nanos>452412</nanos>
+  <sequence>81</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,0x0,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]; isLightweight = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.470112080Z</date>
+  <millis>1763910711470</millis>
+  <nanos>112080</nanos>
+  <sequence>82</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,0x0,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]; containing window is null</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.470567114Z</date>
+  <millis>1763910711470</millis>
+  <nanos>567114</nanos>
+  <sequence>83</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,0x0,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; containing window is null</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.559089459Z</date>
+  <millis>1763910711559</millis>
+  <nanos>89459</nanos>
+  <sequence>84</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>preInit</method>
+  <thread>24</thread>
+  <message>Initial dimensions [java.awt.Point[x=160,y=90], java.awt.Dimension[width=0,height=37](bounds)+java.awt.Insets[top=37,left=0,bottom=0,right=0]]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.582485152Z</date>
+  <millis>1763910711582</millis>
+  <nanos>485152</nanos>
+  <sequence>85</sequence>
+  <logger>sun.awt.X11.XFramePeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XFramePeer</class>
+  <method>getWindowDecorationBits</method>
+  <thread>24</thread>
+  <message>Frame's initial decorations affected by the client property xawt.mwm_decor_title=Optional.empty</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.583071401Z</date>
+  <millis>1763910711583</millis>
+  <nanos>71401</nanos>
+  <sequence>86</sequence>
+  <logger>sun.awt.X11.XFramePeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XFramePeer</class>
+  <method>preInit</method>
+  <thread>24</thread>
+  <message>Frame's initial attributes: decor 1, resizable true, undecorated false, initial state 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.587574132Z</date>
+  <millis>1763910711587</millis>
+  <nanos>574132</nanos>
+  <sequence>87</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>create</method>
+  <thread>24</thread>
+  <message>Creating window for sun.awt.X11.XFramePeer@22c6203f(0) with the following attributes: 
+reparented: false
+event mask: 21209212
+overrideRedirect: false
+color map: 34
+backing store: 0
+target: fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,0x0,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+parent window: 1024
+visual depth: 24
+value mask: 10248
+bit gravity: 1
+bounds: java.awt.Rectangle[x=160,y=90,width=1,height=1]
+visual: 133051311105520
+border pixel: 0
+visual class: 1
+</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.589128702Z</date>
+  <millis>1763910711589</millis>
+  <nanos>128702</nanos>
+  <sequence>88</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>postInit</method>
+  <thread>24</thread>
+  <message>WM name is Viewing Simple Test Puck Factory</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.591577665Z</date>
+  <millis>1763910711591</millis>
+  <nanos>577665</nanos>
+  <sequence>89</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>create</method>
+  <thread>24</thread>
+  <message>Creating window for sun.awt.X11.XRootWindow@462be546(0) with the following attributes: 
+parent window: 1024
+visual depth: 0
+event mask: 21626880
+value mask: 2048
+bounds: java.awt.Rectangle[x=1,y=1,width=1,height=1]
+visual: 0
+visual class: 2
+</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.592512470Z</date>
+  <millis>1763910711592</millis>
+  <nanos>512470</nanos>
+  <sequence>90</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>postInit</method>
+  <thread>24</thread>
+  <message>WM name is fr-tp-inf112-projects-robotsim-app-SimulatorApplication</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.615433171Z</date>
+  <millis>1763910711615</millis>
+  <nanos>433171</nanos>
+  <sequence>91</sequence>
+  <logger>sun.awt.X11.enable.XComponentPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XComponentPeer</class>
+  <method>setEnabled</method>
+  <thread>24</thread>
+  <message>Enabling sun.awt.X11.XFramePeer@22c6203f(1800007)</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.623245181Z</date>
+  <millis>1763910711623</millis>
+  <nanos>245181</nanos>
+  <sequence>92</sequence>
+  <logger>sun.awt.X11.XWM</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWM</class>
+  <method>requestWMExtents</method>
+  <thread>24</thread>
+  <message>Requesting FRAME_EXTENTS</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.626051328Z</date>
+  <millis>1763910711626</millis>
+  <nanos>51328</nanos>
+  <sequence>93</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>create</method>
+  <thread>24</thread>
+  <message>Creating window for sun.awt.X11.XContentWindow[java.awt.Rectangle[x=0,y=0,width=0,height=0]] with the following attributes: 
+parent window: 25165831
+visual depth: 24
+event mask: 23109759
+value mask: 10248
+color map: 34
+bit gravity: 1
+bounds: java.awt.Rectangle[x=0,y=-37,width=1,height=37]
+visual: 133051311105520
+backing store: 0
+border pixel: 0
+target: fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,0x0,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+visual class: 1
+</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.626573678Z</date>
+  <millis>1763910711626</millis>
+  <nanos>573678</nanos>
+  <sequence>94</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>postInit</method>
+  <thread>24</thread>
+  <message>WM name is Content window</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.627450454Z</date>
+  <millis>1763910711627</millis>
+  <nanos>450454</nanos>
+  <sequence>95</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>xSetVisible</method>
+  <thread>24</thread>
+  <message>Setting visible on sun.awt.X11.XContentWindow[java.awt.Rectangle[x=0,y=0,width=0,height=0]] to true</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.628250390Z</date>
+  <millis>1763910711628</millis>
+  <nanos>250390</nanos>
+  <sequence>96</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>create</method>
+  <thread>24</thread>
+  <message>Creating window for sun.awt.X11.XFocusProxyWindow@50753128(0) with the following attributes: 
+parent window: 25165831
+visual depth: 0
+event mask: 23592963
+value mask: 2048
+bounds: java.awt.Rectangle[x=-1,y=-1,width=1,height=1]
+visual: 0
+visual class: 2
+</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.628597585Z</date>
+  <millis>1763910711628</millis>
+  <nanos>597585</nanos>
+  <sequence>97</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>postInit</method>
+  <thread>24</thread>
+  <message>WM name is FocusProxy</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.628925858Z</date>
+  <millis>1763910711628</millis>
+  <nanos>925858</nanos>
+  <sequence>98</sequence>
+  <logger>sun.awt.X11.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>xSetVisible</method>
+  <thread>24</thread>
+  <message>Setting visible on sun.awt.X11.XFocusProxyWindow@50753128(180001f) to true</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.630169828Z</date>
+  <millis>1763910711630</millis>
+  <nanos>169828</nanos>
+  <sequence>99</sequence>
+  <logger>sun.awt.X11.states</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XFramePeer</class>
+  <method>setInitialState</method>
+  <thread>24</thread>
+  <message>Setting initial WM state on sun.awt.X11.XFramePeer@22c6203f(1800007) to 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.631256911Z</date>
+  <millis>1763910711631</millis>
+  <nanos>256911</nanos>
+  <sequence>100</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>setState</method>
+  <thread>24</thread>
+  <message>Setting state of sun.awt.X11.XFramePeer@22c6203f(1800007) to 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.631782812Z</date>
+  <millis>1763910711631</millis>
+  <nanos>782812</nanos>
+  <sequence>101</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>setInitialState</method>
+  <thread>24</thread>
+  <message>Current state of the window sun.awt.X11.XFramePeer@22c6203f(1800007) is []</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.632625281Z</date>
+  <millis>1763910711632</millis>
+  <nanos>625281</nanos>
+  <sequence>102</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>setInitialState</method>
+  <thread>24</thread>
+  <message>Setting initial state of the window sun.awt.X11.XFramePeer@22c6203f(1800007) to []</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.634033243Z</date>
+  <millis>1763910711634</millis>
+  <nanos>33243</nanos>
+  <sequence>103</sequence>
+  <logger>sun.awt.X11.insets.XFramePeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XFramePeer</class>
+  <method>setMaximizedBounds</method>
+  <thread>24</thread>
+  <message>Setting maximized bounds to null</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.635095888Z</date>
+  <millis>1763910711635</millis>
+  <nanos>95888</nanos>
+  <sequence>104</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnShowing</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,0x0,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.639387533Z</date>
+  <millis>1763910711639</millis>
+  <nanos>387533</nanos>
+  <sequence>105</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,0x0,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = false; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.641077348Z</date>
+  <millis>1763910711641</millis>
+  <nanos>77348</nanos>
+  <sequence>106</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnShowing</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.641819582Z</date>
+  <millis>1763910711641</millis>
+  <nanos>819582</nanos>
+  <sequence>107</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.642232413Z</date>
+  <millis>1763910711642</millis>
+  <nanos>232413</nanos>
+  <sequence>108</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnShowing</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,0x0,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.642511103Z</date>
+  <millis>1763910711642</millis>
+  <nanos>511103</nanos>
+  <sequence>109</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,0x0,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.643150195Z</date>
+  <millis>1763910711643</millis>
+  <nanos>150195</nanos>
+  <sequence>110</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnShowing</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.643443461Z</date>
+  <millis>1763910711643</millis>
+  <nanos>443461</nanos>
+  <sequence>111</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.644134079Z</date>
+  <millis>1763910711644</millis>
+  <nanos>134079</nanos>
+  <sequence>112</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnShowing</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuBarBorder@725b5e8e,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.644554952Z</date>
+  <millis>1763910711644</millis>
+  <nanos>554952</nanos>
+  <sequence>113</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,0x0,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.655601101Z</date>
+  <millis>1763910711655</millis>
+  <nanos>601101</nanos>
+  <sequence>114</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnShowing</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.656169973Z</date>
+  <millis>1763910711656</millis>
+  <nanos>169973</nanos>
+  <sequence>115</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.656650646Z</date>
+  <millis>1763910711656</millis>
+  <nanos>650646</nanos>
+  <sequence>116</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnShowing</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.656970116Z</date>
+  <millis>1763910711656</millis>
+  <nanos>970116</nanos>
+  <sequence>117</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.659778777Z</date>
+  <millis>1763910711659</millis>
+  <nanos>778777</nanos>
+  <sequence>118</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnShowing</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.660281747Z</date>
+  <millis>1763910711660</millis>
+  <nanos>281747</nanos>
+  <sequence>119</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,0x0,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.660676965Z</date>
+  <millis>1763910711660</millis>
+  <nanos>676965</nanos>
+  <sequence>120</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>reshape</method>
+  <thread>24</thread>
+  <message>For the operation SET_CLIENT_SIZE new dimensions are [java.awt.Point[x=160,y=90], java.awt.Dimension[width=1600,height=863](client)+java.awt.Insets[top=37,left=0,bottom=0,right=0]]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.666832809Z</date>
+  <millis>1763910711666</millis>
+  <nanos>832809</nanos>
+  <sequence>121</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>reshape</method>
+  <thread>24</thread>
+  <message>Reshaping sun.awt.X11.XFramePeer@22c6203f(1800007) to [java.awt.Point[x=160,y=90], java.awt.Dimension[width=1600,height=863](client)+java.awt.Insets[top=37,left=0,bottom=0,right=0]] op 4 user reshape true</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.667302734Z</date>
+  <millis>1763910711667</millis>
+  <nanos>302734</nanos>
+  <sequence>122</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>reshape</method>
+  <thread>24</thread>
+  <message>- not reparented(false) or not visible(false), default reshape</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.667946752Z</date>
+  <millis>1763910711667</millis>
+  <nanos>946752</nanos>
+  <sequence>123</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>setShellBounds</method>
+  <thread>24</thread>
+  <message>Setting shell bounds on sun.awt.X11.XFramePeer@22c6203f(1800007) to java.awt.Rectangle[x=160,y=90,width=1600,height=863]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.668370543Z</date>
+  <millis>1763910711668</millis>
+  <nanos>370543</nanos>
+  <sequence>124</sequence>
+  <logger>sun.awt.X11.insets.XContentWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XContentWindow</class>
+  <method>setContentBounds</method>
+  <thread>24</thread>
+  <message>Setting content bounds java.awt.Rectangle[x=0,y=-37,width=1600,height=900], old bounds java.awt.Rectangle[x=0,y=0,width=0,height=0]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.669021822Z</date>
+  <millis>1763910711669</millis>
+  <nanos>21822</nanos>
+  <sequence>125</sequence>
+  <logger>sun.awt.X11.insets.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>xSetBounds</method>
+  <thread>24</thread>
+  <message>Setting bounds on sun.awt.X11.XContentWindow[java.awt.Rectangle[x=0,y=-37,width=1600,height=900]] to (0, -37), 1600x900</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.669485433Z</date>
+  <millis>1763910711669</millis>
+  <nanos>485433</nanos>
+  <sequence>126</sequence>
+  <logger>sun.awt.X11.insets.XContentWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XContentWindow</class>
+  <method>setContentBounds</method>
+  <thread>24</thread>
+  <message>Sending RESIZED</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.672881804Z</date>
+  <millis>1763910711672</millis>
+  <nanos>881804</nanos>
+  <sequence>127</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1600x863,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.673517341Z</date>
+  <millis>1763910711673</millis>
+  <nanos>517341</nanos>
+  <sequence>128</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1600x863,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.673873132Z</date>
+  <millis>1763910711673</millis>
+  <nanos>873132</nanos>
+  <sequence>129</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1600x863,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.674103887Z</date>
+  <millis>1763910711674</millis>
+  <nanos>103887</nanos>
+  <sequence>130</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleConfigureNotifyEvent</method>
+  <thread>23</thread>
+  <message>Configure notify XConfigureEvent = type = ConfigureNotify, serial = 212, send_event = false, display = 133051311011488, event = 25165831, window = sun.awt.X11.XFramePeer@22c6203f(1800007), x = 160, y = 90, width = 1600, height = 863, border_width = 0, above = 27262977, override_redirect = false, </message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.674159809Z</date>
+  <millis>1763910711674</millis>
+  <nanos>159809</nanos>
+  <sequence>131</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1600x863,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.675794213Z</date>
+  <millis>1763910711675</millis>
+  <nanos>794213</nanos>
+  <sequence>132</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleConfigureNotifyEvent</method>
+  <thread>23</thread>
+  <message> - not visible, skipping</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.676085288Z</date>
+  <millis>1763910711676</millis>
+  <nanos>85288</nanos>
+  <sequence>133</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1600x863,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.676830180Z</date>
+  <millis>1763910711676</millis>
+  <nanos>830180</nanos>
+  <sequence>134</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1600x863,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.778481266Z</date>
+  <millis>1763910711778</millis>
+  <nanos>481266</nanos>
+  <sequence>135</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,1600x23,invalid,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuBarBorder@725b5e8e,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.779065006Z</date>
+  <millis>1763910711779</millis>
+  <nanos>65006</nanos>
+  <sequence>136</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.779457418Z</date>
+  <millis>1763910711779</millis>
+  <nanos>457418</nanos>
+  <sequence>137</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,23,1600x840,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.779736834Z</date>
+  <millis>1763910711779</millis>
+  <nanos>736834</nanos>
+  <sequence>138</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.780183203Z</date>
+  <millis>1763910711780</millis>
+  <nanos>183203</nanos>
+  <sequence>139</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1600x863,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.780511810Z</date>
+  <millis>1763910711780</millis>
+  <nanos>511810</nanos>
+  <sequence>140</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1600x863,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.781245438Z</date>
+  <millis>1763910711781</millis>
+  <nanos>245438</nanos>
+  <sequence>141</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,35x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.781544285Z</date>
+  <millis>1763910711781</millis>
+  <nanos>544285</nanos>
+  <sequence>142</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,35x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.781820312Z</date>
+  <millis>1763910711781</millis>
+  <nanos>820312</nanos>
+  <sequence>143</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,35,0,75x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.782075604Z</date>
+  <millis>1763910711782</millis>
+  <nanos>75604</nanos>
+  <sequence>144</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,35,0,75x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.782363965Z</date>
+  <millis>1763910711782</millis>
+  <nanos>363965</nanos>
+  <sequence>145</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,35x21,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.782635462Z</date>
+  <millis>1763910711782</millis>
+  <nanos>635462</nanos>
+  <sequence>146</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,35x21,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.782923420Z</date>
+  <millis>1763910711782</millis>
+  <nanos>923420</nanos>
+  <sequence>147</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,35,0,75x21,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.783186137Z</date>
+  <millis>1763910711783</millis>
+  <nanos>186137</nanos>
+  <sequence>148</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,35,0,75x21,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.783432401Z</date>
+  <millis>1763910711783</millis>
+  <nanos>432401</nanos>
+  <sequence>149</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,1600x23,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuBarBorder@725b5e8e,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.783716966Z</date>
+  <millis>1763910711783</millis>
+  <nanos>716966</nanos>
+  <sequence>150</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.783983397Z</date>
+  <millis>1763910711783</millis>
+  <nanos>983397</nanos>
+  <sequence>151</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,23,1600x840,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.784234254Z</date>
+  <millis>1763910711784</millis>
+  <nanos>234254</nanos>
+  <sequence>152</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.784542471Z</date>
+  <millis>1763910711784</millis>
+  <nanos>542471</nanos>
+  <sequence>153</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1600x863,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.784759887Z</date>
+  <millis>1763910711784</millis>
+  <nanos>759887</nanos>
+  <sequence>154</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1600x863,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.784971194Z</date>
+  <millis>1763910711784</millis>
+  <nanos>971194</nanos>
+  <sequence>155</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1600x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.785195728Z</date>
+  <millis>1763910711785</millis>
+  <nanos>195728</nanos>
+  <sequence>156</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1600x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.785454964Z</date>
+  <millis>1763910711785</millis>
+  <nanos>454964</nanos>
+  <sequence>157</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.785721294Z</date>
+  <millis>1763910711785</millis>
+  <nanos>721294</nanos>
+  <sequence>158</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.790145579Z</date>
+  <millis>1763910711790</millis>
+  <nanos>145579</nanos>
+  <sequence>159</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnShowing</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.790950352Z</date>
+  <millis>1763910711790</millis>
+  <nanos>950352</nanos>
+  <sequence>160</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.791565903Z</date>
+  <millis>1763910711791</millis>
+  <nanos>565903</nanos>
+  <sequence>161</sequence>
+  <logger>sun.awt.X11.states</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XFramePeer</class>
+  <method>setInitialState</method>
+  <thread>24</thread>
+  <message>Setting initial WM state on sun.awt.X11.XFramePeer@22c6203f(1800007) to 1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.792008896Z</date>
+  <millis>1763910711792</millis>
+  <nanos>8896</nanos>
+  <sequence>162</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>setState</method>
+  <thread>24</thread>
+  <message>Setting state of sun.awt.X11.XFramePeer@22c6203f(1800007) to 6</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.792414957Z</date>
+  <millis>1763910711792</millis>
+  <nanos>414957</nanos>
+  <sequence>163</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>setInitialState</method>
+  <thread>24</thread>
+  <message>Current state of the window sun.awt.X11.XFramePeer@22c6203f(1800007) is []</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.792965091Z</date>
+  <millis>1763910711792</millis>
+  <nanos>965091</nanos>
+  <sequence>164</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>setInitialState</method>
+  <thread>24</thread>
+  <message>Setting initial state of the window sun.awt.X11.XFramePeer@22c6203f(1800007) to [_NET_WM_STATE_MAXIMIZED_HORZ:300, _NET_WM_STATE_MAXIMIZED_VERT:301]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.796314932Z</date>
+  <millis>1763910711796</millis>
+  <nanos>314932</nanos>
+  <sequence>165</sequence>
+  <logger>sun.awt.X11.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>xSetVisible</method>
+  <thread>24</thread>
+  <message>Setting visible on sun.awt.X11.XFramePeer@22c6203f(1800007) to true</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.799254370Z</date>
+  <millis>1763910711799</millis>
+  <nanos>254370</nanos>
+  <sequence>166</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.799959889Z</date>
+  <millis>1763910711799</millis>
+  <nanos>959889</nanos>
+  <sequence>167</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,160,90,1600x900,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1600x863,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.812345930Z</date>
+  <millis>1763910711812</millis>
+  <nanos>345930</nanos>
+  <sequence>168</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleReparentNotifyEvent</method>
+  <thread>23</thread>
+  <message>XReparentEvent = type = ReparentNotify, serial = 227, send_event = false, display = 133051311011488, event = 25165831, window = sun.awt.X11.XFramePeer@22c6203f(1800007), parent = 6291971, x = 0, y = 0, override_redirect = false, </message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.839863514Z</date>
+  <millis>1763910711839</millis>
+  <nanos>863514</nanos>
+  <sequence>169</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleConfigureNotifyEvent</method>
+  <thread>23</thread>
+  <message>Configure notify XConfigureEvent = type = ConfigureNotify, serial = 229, send_event = false, display = 133051311011488, event = 25165831, window = sun.awt.X11.XFramePeer@22c6203f(1800007), x = 25, y = 62, width = 1854, height = 1011, border_width = 0, above = 6291972, override_redirect = false, </message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.840734373Z</date>
+  <millis>1763910711840</millis>
+  <nanos>734373</nanos>
+  <sequence>170</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleConfigureNotifyEvent</method>
+  <thread>23</thread>
+  <message>reparented=true, visible=true, WM=15, decorations=1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.846994535Z</date>
+  <millis>1763910711846</millis>
+  <nanos>994535</nanos>
+  <sequence>171</sequence>
+  <logger>sun.awt.X11.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>getNewLocation</method>
+  <thread>23</thread>
+  <message>New X location: java.awt.Point[x=66,y=32]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.847826684Z</date>
+  <millis>1763910711847</millis>
+  <nanos>826684</nanos>
+  <sequence>172</sequence>
+  <logger>sun.awt.X11.insets.XContentWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XContentWindow</class>
+  <method>setContentBounds</method>
+  <thread>23</thread>
+  <message>Setting content bounds java.awt.Rectangle[x=0,y=-37,width=1854,height=1048], old bounds java.awt.Rectangle[x=0,y=-37,width=1600,height=900]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.848400507Z</date>
+  <millis>1763910711848</millis>
+  <nanos>400507</nanos>
+  <sequence>173</sequence>
+  <logger>sun.awt.X11.insets.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>xSetBounds</method>
+  <thread>23</thread>
+  <message>Setting bounds on sun.awt.X11.XContentWindow[java.awt.Rectangle[x=0,y=-37,width=1854,height=1048]] to (0, -37), 1854x1048</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.849429758Z</date>
+  <millis>1763910711849</millis>
+  <nanos>429758</nanos>
+  <sequence>174</sequence>
+  <logger>sun.awt.X11.insets.XContentWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XContentWindow</class>
+  <method>setContentBounds</method>
+  <thread>23</thread>
+  <message>Sending RESIZED</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.851782470Z</date>
+  <millis>1763910711851</millis>
+  <nanos>782470</nanos>
+  <sequence>175</sequence>
+  <logger>sun.awt.X11.XWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindow</class>
+  <method>handleMapNotifyEvent</method>
+  <thread>23</thread>
+  <message>Mapped sun.awt.X11.XFramePeer@22c6203f(1800007)</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.852621887Z</date>
+  <millis>1763910711852</millis>
+  <nanos>621887</nanos>
+  <sequence>176</sequence>
+  <logger>sun.awt.X11.focus.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>handleMapNotifyEvent</method>
+  <thread>23</thread>
+  <message>Automatically request focus on window</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.853246634Z</date>
+  <millis>1763910711853</millis>
+  <nanos>246634</nanos>
+  <sequence>177</sequence>
+  <logger>sun.awt.X11.focus.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>requestXFocus</method>
+  <thread>23</thread>
+  <message>Requesting focus to proxy: sun.awt.X11.XFocusProxyWindow@50753128(180001f)</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.853856394Z</date>
+  <millis>1763910711853</millis>
+  <nanos>856394</nanos>
+  <sequence>178</sequence>
+  <logger>sun.awt.X11.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>updateAlwaysOnTop</method>
+  <thread>23</thread>
+  <message>Promoting always-on-top state false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.854490302Z</date>
+  <millis>1763910711854</millis>
+  <nanos>490302</nanos>
+  <sequence>179</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>requestState</method>
+  <thread>23</thread>
+  <message>Setting _NET_STATE atom _NET_WM_STATE_ABOVE:347 on sun.awt.X11.XFramePeer@22c6203f(1800007) for false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.858633087Z</date>
+  <millis>1763910711858</millis>
+  <nanos>633087</nanos>
+  <sequence>180</sequence>
+  <logger>sun.awt.X11.focus.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleWmTakeFocus</method>
+  <thread>23</thread>
+  <message>WM_TAKE_FOCUS on sun.awt.X11.XFramePeer@22c6203f(1800007)</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.859554387Z</date>
+  <millis>1763910711859</millis>
+  <nanos>554387</nanos>
+  <sequence>181</sequence>
+  <logger>sun.awt.X11.focus.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>requestWindowFocus</method>
+  <thread>23</thread>
+  <message>Request for decorated window focus</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.860642436Z</date>
+  <millis>1763910711860</millis>
+  <nanos>642436</nanos>
+  <sequence>182</sequence>
+  <logger>sun.awt.X11.focus.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>requestWindowFocus</method>
+  <thread>23</thread>
+  <message>Requesting focus to this window</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.861203821Z</date>
+  <millis>1763910711861</millis>
+  <nanos>203821</nanos>
+  <sequence>183</sequence>
+  <logger>sun.awt.X11.focus.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>requestXFocus</method>
+  <thread>23</thread>
+  <message>Requesting focus to proxy: sun.awt.X11.XFocusProxyWindow@50753128(180001f)</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.862905615Z</date>
+  <millis>1763910711862</millis>
+  <nanos>905615</nanos>
+  <sequence>184</sequence>
+  <logger>sun.awt.X11.focus.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>handleFocusEvent</method>
+  <thread>23</thread>
+  <message>XFocusChangeEvent = type = FocusIn, serial = 238, send_event = false, display = 133051311011488, window = sun.awt.X11.XFocusProxyWindow@50753128(180001f), mode = 0, detail = 3, </message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.886483139Z</date>
+  <millis>1763910711886</millis>
+  <nanos>483139</nanos>
+  <sequence>185</sequence>
+  <logger>sun.awt.X11.grab.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>handleXCrossingEvent</method>
+  <thread>23</thread>
+  <message>XCrossingEvent = type = EnterNotify, serial = 266, send_event = false, display = 133051311011488, window = sun.awt.X11.XFramePeer@22c6203f(1800007), root = 1024, subwindow = 25165852, time = 15937541, x = 176, y = 219, x_root = 242, y_root = 288, mode = 0, detail = 1, same_screen = true, focus = false, state = 16, , when grabbed false, contains true</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.914103890Z</date>
+  <millis>1763910711914</millis>
+  <nanos>103890</nanos>
+  <sequence>186</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleConfigureNotifyEvent</method>
+  <thread>23</thread>
+  <message>Configure notify XConfigureEvent = type = ConfigureNotify, serial = 267, send_event = false, display = 133051311011488, event = 25165831, window = sun.awt.X11.XFramePeer@22c6203f(1800007), x = 0, y = 37, width = 1854, height = 1011, border_width = 0, above = 6291972, override_redirect = false, </message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.915018950Z</date>
+  <millis>1763910711915</millis>
+  <nanos>18950</nanos>
+  <sequence>187</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleConfigureNotifyEvent</method>
+  <thread>23</thread>
+  <message>reparented=true, visible=true, WM=15, decorations=1</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.919748581Z</date>
+  <millis>1763910711919</millis>
+  <nanos>748581</nanos>
+  <sequence>188</sequence>
+  <logger>sun.awt.X11.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>getNewLocation</method>
+  <thread>23</thread>
+  <message>New X location: java.awt.Point[x=66,y=32]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.920433834Z</date>
+  <millis>1763910711920</millis>
+  <nanos>433834</nanos>
+  <sequence>189</sequence>
+  <logger>sun.awt.X11.insets.XContentWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XContentWindow</class>
+  <method>setContentBounds</method>
+  <thread>23</thread>
+  <message>Setting content bounds java.awt.Rectangle[x=0,y=-37,width=1854,height=1048], old bounds java.awt.Rectangle[x=0,y=-37,width=1854,height=1048]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.920929877Z</date>
+  <millis>1763910711920</millis>
+  <nanos>929877</nanos>
+  <sequence>190</sequence>
+  <logger>sun.awt.X11.insets.XBaseWindow</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XBaseWindow</class>
+  <method>xSetBounds</method>
+  <thread>23</thread>
+  <message>Setting bounds on sun.awt.X11.XContentWindow[java.awt.Rectangle[x=0,y=-37,width=1854,height=1048]] to (0, -37), 1854x1048</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.966909599Z</date>
+  <millis>1763910711966</millis>
+  <nanos>909599</nanos>
+  <sequence>191</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>24</thread>
+  <message>java.awt.event.WindowEvent[WINDOW_OPENED,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.978747517Z</date>
+  <millis>1763910711978</millis>
+  <nanos>747517</nanos>
+  <sequence>192</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.979923904Z</date>
+  <millis>1763910711979</millis>
+  <nanos>923904</nanos>
+  <sequence>193</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.980896232Z</date>
+  <millis>1763910711980</millis>
+  <nanos>896232</nanos>
+  <sequence>194</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1854x1011,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.981531555Z</date>
+  <millis>1763910711981</millis>
+  <nanos>531555</nanos>
+  <sequence>195</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1854x1011,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.982291852Z</date>
+  <millis>1763910711982</millis>
+  <nanos>291852</nanos>
+  <sequence>196</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1854x1011,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.983106218Z</date>
+  <millis>1763910711983</millis>
+  <nanos>106218</nanos>
+  <sequence>197</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1854x1011,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.985220904Z</date>
+  <millis>1763910711985</millis>
+  <nanos>220904</nanos>
+  <sequence>198</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,1854x23,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuBarBorder@725b5e8e,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.986431163Z</date>
+  <millis>1763910711986</millis>
+  <nanos>431163</nanos>
+  <sequence>199</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.987529845Z</date>
+  <millis>1763910711987</millis>
+  <nanos>529845</nanos>
+  <sequence>200</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnReshaping</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,23,1854x988,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.988078752Z</date>
+  <millis>1763910711988</millis>
+  <nanos>78752</nanos>
+  <sequence>201</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.988471605Z</date>
+  <millis>1763910711988</millis>
+  <nanos>471605</nanos>
+  <sequence>202</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1854x1011,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.988716612Z</date>
+  <millis>1763910711988</millis>
+  <nanos>716612</nanos>
+  <sequence>203</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1854x1011,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.989441393Z</date>
+  <millis>1763910711989</millis>
+  <nanos>441393</nanos>
+  <sequence>204</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,1854x23,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuBarBorder@725b5e8e,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.989744653Z</date>
+  <millis>1763910711989</millis>
+  <nanos>744653</nanos>
+  <sequence>205</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.989957560Z</date>
+  <millis>1763910711989</millis>
+  <nanos>957560</nanos>
+  <sequence>206</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,23,1854x988,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.990191271Z</date>
+  <millis>1763910711990</millis>
+  <nanos>191271</nanos>
+  <sequence>207</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,invalid,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.990378993Z</date>
+  <millis>1763910711990</millis>
+  <nanos>378993</nanos>
+  <sequence>208</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1854x1011,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.990551340Z</date>
+  <millis>1763910711990</millis>
+  <nanos>551340</nanos>
+  <sequence>209</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1854x1011,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.990715913Z</date>
+  <millis>1763910711990</millis>
+  <nanos>715913</nanos>
+  <sequence>210</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.990901799Z</date>
+  <millis>1763910711990</millis>
+  <nanos>901799</nanos>
+  <sequence>211</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; areBoundsValid = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.991140558Z</date>
+  <millis>1763910711991</millis>
+  <nanos>140558</nanos>
+  <sequence>212</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnValidating</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.991458409Z</date>
+  <millis>1763910711991</millis>
+  <nanos>458409</nanos>
+  <sequence>213</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.992169398Z</date>
+  <millis>1763910711992</millis>
+  <nanos>169398</nanos>
+  <sequence>214</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>24</thread>
+  <message>java.awt.event.WindowEvent[WINDOW_GAINED_FOCUS,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.992960190Z</date>
+  <millis>1763910711992</millis>
+  <nanos>960190</nanos>
+  <sequence>215</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>24</thread>
+  <message>java.awt.event.WindowEvent[WINDOW_ACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.993969987Z</date>
+  <millis>1763910711993</millis>
+  <nanos>969987</nanos>
+  <sequence>216</sequence>
+  <logger>javax.swing.SortingFocusTraversalPolicy</logger>
+  <level>FINE</level>
+  <class>javax.swing.SortingFocusTraversalPolicy</class>
+  <method>getFirstComponent</method>
+  <thread>24</thread>
+  <message>### Getting first component in fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.994907475Z</date>
+  <millis>1763910711994</millis>
+  <nanos>907475</nanos>
+  <sequence>217</sequence>
+  <logger>javax.swing.SortingFocusTraversalPolicy</logger>
+  <level>FINE</level>
+  <class>javax.swing.SortingFocusTraversalPolicy</class>
+  <method>getFirstComponent</method>
+  <thread>24</thread>
+  <message>### Cycle is [fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=], javax.swing.JLayeredPane[null.layeredPane,0,0,1854x1011,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true], fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,1854x23,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuBarBorder@725b5e8e,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true], fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,35x21,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File], fr.tp.inf112.projects.canvas.view.AnimateMenu[,35,0,75x21,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation], fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,23,1854x988,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.996450085Z</date>
+  <millis>1763910711996</millis>
+  <nanos>450085</nanos>
+  <sequence>218</sequence>
+  <logger>sun.awt.X11.focus.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>requestWindowFocus</method>
+  <thread>24</thread>
+  <message>Request for decorated window focus</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.996874218Z</date>
+  <millis>1763910711996</millis>
+  <nanos>874218</nanos>
+  <sequence>219</sequence>
+  <logger>sun.awt.X11.focus.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>requestWindowFocus</method>
+  <thread>24</thread>
+  <message>Requesting focus to this window</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:51.997134981Z</date>
+  <millis>1763910711997</millis>
+  <nanos>134981</nanos>
+  <sequence>220</sequence>
+  <logger>sun.awt.X11.focus.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>requestXFocus</method>
+  <thread>24</thread>
+  <message>Requesting focus to proxy: sun.awt.X11.XFocusProxyWindow@50753128(180001f)</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.026859390Z</date>
+  <millis>1763910712026</millis>
+  <nanos>859390</nanos>
+  <sequence>221</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>24</thread>
+  <message>java.awt.event.FocusEvent[FOCUS_GAINED,permanent,opposite=null,cause=ACTIVATION] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.029386989Z</date>
+  <millis>1763910712029</millis>
+  <nanos>386989</nanos>
+  <sequence>222</sequence>
+  <logger>sun.awt.im.InputContext</logger>
+  <level>FINE</level>
+  <class>sun.awt.im.InputContext</class>
+  <method>activateInputMethod</method>
+  <thread>24</thread>
+  <message>Current client component fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.030667054Z</date>
+  <millis>1763910712030</millis>
+  <nanos>667054</nanos>
+  <sequence>223</sequence>
+  <logger>sun.awt.X11.XInputMethod</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XInputMethod</class>
+  <method>getPeer</method>
+  <thread>24</thread>
+  <message>Client is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.031286638Z</date>
+  <millis>1763910712031</millis>
+  <nanos>286638</nanos>
+  <sequence>224</sequence>
+  <logger>sun.awt.X11.XInputMethod</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XInputMethod</class>
+  <method>getPeer</method>
+  <thread>24</thread>
+  <message>Peer is sun.awt.X11.XFramePeer@22c6203f(1800007), client is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.156429690Z</date>
+  <millis>1763910712156</millis>
+  <nanos>429690</nanos>
+  <sequence>225</sequence>
+  <logger>sun.awt.X11.XInputMethod</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XInputMethod</class>
+  <method>getPeer</method>
+  <thread>24</thread>
+  <message>Client is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.156853281Z</date>
+  <millis>1763910712156</millis>
+  <nanos>853281</nanos>
+  <sequence>226</sequence>
+  <logger>sun.awt.X11.XInputMethod</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XInputMethod</class>
+  <method>getPeer</method>
+  <thread>24</thread>
+  <message>Peer is sun.awt.X11.XFramePeer@22c6203f(1800007), client is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.160165729Z</date>
+  <millis>1763910712160</millis>
+  <nanos>165729</nanos>
+  <sequence>227</sequence>
+  <logger>sun.awt.X11.XInputMethod</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XInputMethod</class>
+  <method>getPeer</method>
+  <thread>24</thread>
+  <message>Client is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.160777943Z</date>
+  <millis>1763910712160</millis>
+  <nanos>777943</nanos>
+  <sequence>228</sequence>
+  <logger>sun.awt.X11.XInputMethod</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XInputMethod</class>
+  <method>getPeer</method>
+  <thread>24</thread>
+  <message>Peer is sun.awt.X11.XFramePeer@22c6203f(1800007), client is fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.164968425Z</date>
+  <millis>1763910712164</millis>
+  <nanos>968425</nanos>
+  <sequence>229</sequence>
+  <logger>sun.awt.X11.focus.XComponentPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XComponentPeer</class>
+  <method>focusGained</method>
+  <thread>24</thread>
+  <message>java.awt.event.FocusEvent[FOCUS_GAINED,permanent,opposite=null,cause=ACTIVATION] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.315549171Z</date>
+  <millis>1763910712315</millis>
+  <nanos>549171</nanos>
+  <sequence>230</sequence>
+  <logger>sun.awt.X11.grab.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>handleXCrossingEvent</method>
+  <thread>23</thread>
+  <message>XCrossingEvent = type = LeaveNotify, serial = 679, send_event = false, display = 133051311011488, window = sun.awt.X11.XFramePeer@22c6203f(1800007), root = 1024, subwindow = 25165852, time = 15937971, x = 19, y = -36, x_root = 85, y_root = 33, mode = 0, detail = 1, same_screen = true, focus = false, state = 16, , when grabbed false, contains false</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.784818133Z</date>
+  <millis>1763910712784</millis>
+  <nanos>818133</nanos>
+  <sequence>231</sequence>
+  <logger>sun.awt.X11.focus.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>handleFocusEvent</method>
+  <thread>23</thread>
+  <message>XFocusChangeEvent = type = FocusOut, serial = 679, send_event = false, display = 133051311011488, window = sun.awt.X11.XFocusProxyWindow@50753128(180001f), mode = 0, detail = 3, </message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.786587399Z</date>
+  <millis>1763910712786</millis>
+  <nanos>587399</nanos>
+  <sequence>232</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>24</thread>
+  <message>java.awt.event.WindowEvent[WINDOW_LOST_FOCUS,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.787180174Z</date>
+  <millis>1763910712787</millis>
+  <nanos>180174</nanos>
+  <sequence>233</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>24</thread>
+  <message>Active fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], Current focused fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], losing focus fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] opposite null</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.788625133Z</date>
+  <millis>1763910712788</millis>
+  <nanos>625133</nanos>
+  <sequence>234</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>24</thread>
+  <message>java.awt.event.FocusEvent[FOCUS_LOST,temporary,opposite=null,cause=ACTIVATION] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.790107948Z</date>
+  <millis>1763910712790</millis>
+  <nanos>107948</nanos>
+  <sequence>235</sequence>
+  <logger>sun.awt.X11.focus.XComponentPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XComponentPeer</class>
+  <method>focusLost</method>
+  <thread>24</thread>
+  <message>java.awt.event.FocusEvent[FOCUS_LOST,temporary,opposite=null,cause=ACTIVATION] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:11:52.791073835Z</date>
+  <millis>1763910712791</millis>
+  <nanos>73835</nanos>
+  <sequence>236</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>24</thread>
+  <message>java.awt.event.WindowEvent[WINDOW_DEACTIVATED,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.101719814Z</date>
+  <millis>1763910744101</millis>
+  <nanos>719814</nanos>
+  <sequence>237</sequence>
+  <logger>java.awt.focus.DefaultKeyboardFocusManager</logger>
+  <level>FINE</level>
+  <class>java.awt.DefaultKeyboardFocusManager</class>
+  <method>dispatchEvent</method>
+  <thread>24</thread>
+  <message>java.awt.event.WindowEvent[WINDOW_CLOSING,opposite=null,oldState=0,newState=0] on frame0</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.103197282Z</date>
+  <millis>1763910744103</millis>
+  <nanos>197282</nanos>
+  <sequence>238</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight=false</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.106660367Z</date>
+  <millis>1763910744106</millis>
+  <nanos>660367</nanos>
+  <sequence>239</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.107575773Z</date>
+  <millis>1763910744107</millis>
+  <nanos>575773</nanos>
+  <sequence>240</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.108371199Z</date>
+  <millis>1763910744108</millis>
+  <nanos>371199</nanos>
+  <sequence>241</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>setState</method>
+  <thread>24</thread>
+  <message>Setting state of sun.awt.X11.XFramePeer@22c6203f(1800007) to 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.109528378Z</date>
+  <millis>1763910744109</millis>
+  <nanos>528378</nanos>
+  <sequence>242</sequence>
+  <logger>sun.awt.X11.XNETProtocol</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XNETProtocol</class>
+  <method>requestState</method>
+  <thread>24</thread>
+  <message>Requesting state on sun.awt.X11.XFramePeer@22c6203f(1800007) for 0</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.110615760Z</date>
+  <millis>1763910744110</millis>
+  <nanos>615760</nanos>
+  <sequence>243</sequence>
+  <logger>sun.awt.X11.XWindowPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XWindowPeer</class>
+  <method>xSetVisible</method>
+  <thread>24</thread>
+  <message>Setting visible on sun.awt.X11.XFramePeer@22c6203f(1800007) to false</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.112966197Z</date>
+  <millis>1763910744112</millis>
+  <nanos>966197</nanos>
+  <sequence>244</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,23,1854x988,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.113709646Z</date>
+  <millis>1763910744113</millis>
+  <nanos>709646</nanos>
+  <sequence>245</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasPanel[,0,23,1854x988,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.114231672Z</date>
+  <millis>1763910744114</millis>
+  <nanos>231672</nanos>
+  <sequence>246</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.115108056Z</date>
+  <millis>1763910744115</millis>
+  <nanos>108056</nanos>
+  <sequence>247</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,35,0,75x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]; isLightweight=true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.116172462Z</date>
+  <millis>1763910744116</millis>
+  <nanos>172462</nanos>
+  <sequence>248</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.AnimateMenu[,35,0,75x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Animation]; isLightweight = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.116966530Z</date>
+  <millis>1763910744116</millis>
+  <nanos>966530</nanos>
+  <sequence>249</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.117885016Z</date>
+  <millis>1763910744117</millis>
+  <nanos>885016</nanos>
+  <sequence>250</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,35x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]; isLightweight=true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.118517661Z</date>
+  <millis>1763910744118</millis>
+  <nanos>517661</nanos>
+  <sequence>251</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.FileMenu[,0,0,35x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@5f1eb887,flags=256,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=File]; isLightweight = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.119179326Z</date>
+  <millis>1763910744119</millis>
+  <nanos>179326</nanos>
+  <sequence>252</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.119798148Z</date>
+  <millis>1763910744119</millis>
+  <nanos>798148</nanos>
+  <sequence>253</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,1854x23,invalid,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuBarBorder@725b5e8e,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true]; isLightweight=true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.120409881Z</date>
+  <millis>1763910744120</millis>
+  <nanos>409881</nanos>
+  <sequence>254</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewerMenuBar[,0,0,1854x23,invalid,layout=javax.swing.plaf.basic.DefaultMenuLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuBarBorder@725b5e8e,flags=392,maximumSize=,minimumSize=,preferredSize=,margin=,paintBorder=true]; isLightweight = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.120990250Z</date>
+  <millis>1763910744120</millis>
+  <nanos>990250</nanos>
+  <sequence>255</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.121933217Z</date>
+  <millis>1763910744121</millis>
+  <nanos>933217</nanos>
+  <sequence>256</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleConfigureNotifyEvent</method>
+  <thread>23</thread>
+  <message>Configure notify XConfigureEvent = type = ConfigureNotify, serial = 687, send_event = false, display = 133051311011488, event = 25165831, window = sun.awt.X11.XFramePeer@22c6203f(1800007), x = 0, y = 37, width = 1600, height = 863, border_width = 0, above = 6291972, override_redirect = false, </message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.122927062Z</date>
+  <millis>1763910744122</millis>
+  <nanos>927062</nanos>
+  <sequence>258</sequence>
+  <logger>sun.awt.X11.insets.XDecoratedPeer</logger>
+  <level>FINE</level>
+  <class>sun.awt.X11.XDecoratedPeer</class>
+  <method>handleConfigureNotifyEvent</method>
+  <thread>23</thread>
+  <message> - not visible, skipping</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.122259252Z</date>
+  <millis>1763910744122</millis>
+  <nanos>259252</nanos>
+  <sequence>257</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1854x1011,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; isLightweight=true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.124138308Z</date>
+  <millis>1763910744124</millis>
+  <nanos>138308</nanos>
+  <sequence>259</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JLayeredPane[null.layeredPane,0,0,1854x1011,invalid,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]; isLightweight = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.124852565Z</date>
+  <millis>1763910744124</millis>
+  <nanos>852565</nanos>
+  <sequence>260</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.125512208Z</date>
+  <millis>1763910744125</millis>
+  <nanos>512208</nanos>
+  <sequence>261</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1854x1011,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.126033254Z</date>
+  <millis>1763910744126</millis>
+  <nanos>33254</nanos>
+  <sequence>262</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JPanel[null.glassPane,0,0,1854x1011,invalid,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.126588474Z</date>
+  <millis>1763910744126</millis>
+  <nanos>588474</nanos>
+  <sequence>263</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = true; disposing = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.127129036Z</date>
+  <millis>1763910744127</millis>
+  <nanos>129036</nanos>
+  <sequence>264</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight=true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.127646605Z</date>
+  <millis>1763910744127</millis>
+  <nanos>646605</nanos>
+  <sequence>265</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=]; isLightweight = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.128182719Z</date>
+  <millis>1763910744128</millis>
+  <nanos>182719</nanos>
+  <sequence>266</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = false; disposing = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.144491972Z</date>
+  <millis>1763910744144</millis>
+  <nanos>491972</nanos>
+  <sequence>267</sequence>
+  <logger>java.awt.mixing.Container</logger>
+  <level>FINE</level>
+  <class>java.awt.Container</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight=false</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.145027618Z</date>
+  <millis>1763910744145</millis>
+  <nanos>27618</nanos>
+  <sequence>268</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>mixOnHiding</method>
+  <thread>24</thread>
+  <message>this = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; isLightweight = false</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.145331519Z</date>
+  <millis>1763910744145</millis>
+  <nanos>331519</nanos>
+  <sequence>269</sequence>
+  <logger>java.awt.mixing.Component</logger>
+  <level>FINE</level>
+  <class>java.awt.Component</class>
+  <method>isMixingNeeded</method>
+  <thread>24</thread>
+  <message>containing window = fr.tp.inf112.projects.canvas.view.CanvasViewer[frame0,66,32,1854x1048,invalid,hidden,layout=java.awt.BorderLayout,title=Viewing Simple Test Puck Factory,resizable,maximized,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,37,1854x1011,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]; has h/w descendants = false; has l/w descendants = false; disposing = true</message>
+</record>
+<record>
+  <date>2025-11-23T15:12:24.145934829Z</date>
+  <millis>1763910744145</millis>
+  <nanos>934829</nanos>
+  <sequence>270</sequence>
+  <logger>java.lang.Runtime</logger>
+  <level>FINE</level>
+  <class>java.lang.Shutdown</class>
+  <method>logRuntimeExit</method>
+  <thread>24</thread>
+  <message>Runtime.exit() called with status: 0</message>
+  <exception>
+    <message>java.lang.Throwable: Runtime.exit(0)</message>
+    <frame>
+      <class>java.lang.Shutdown</class>
+      <method>logRuntimeExit</method>
+      <line>179</line>
+    </frame>
+    <frame>
+      <class>java.lang.Shutdown</class>
+      <method>exit</method>
+      <line>160</line>
+    </frame>
+    <frame>
+      <class>java.lang.Runtime</class>
+      <method>exit</method>
+      <line>188</line>
+    </frame>
+    <frame>
+      <class>java.lang.System</class>
+      <method>exit</method>
+      <line>1920</line>
+    </frame>
+    <frame>
+      <class>javax.swing.JFrame</class>
+      <method>processWindowEvent</method>
+      <line>311</line>
+    </frame>
+    <frame>
+      <class>java.awt.Window</class>
+      <method>processEvent</method>
+      <line>2044</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEventImpl</method>
+      <line>4996</line>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+      <line>2324</line>
+    </frame>
+    <frame>
+      <class>java.awt.Window</class>
+      <method>dispatchEventImpl</method>
+      <line>2780</line>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+      <line>4828</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEventImpl</method>
+      <line>775</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>720</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>714</line>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>400</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>87</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>98</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>747</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>400</line>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>87</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEvent</method>
+      <line>744</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpOneEventForFilters</method>
+      <line>203</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForFilter</method>
+      <line>124</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForHierarchy</method>
+      <line>113</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>109</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>101</line>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>run</method>
+      <line>90</line>
+    </frame>
+  </exception>
+</record>
+</log>
