@@ -59,7 +59,15 @@ public class RemoteSimulatorController extends SimulatorController {
     @Override
     public void startAnimation() {
         try {
+        	Factory factory = getFactory();
             String factoryId = getFactory().getId();
+            LOGGER.info("Auto-saving factory before starting simulation...");
+            try {
+                getPersistenceManager().persist(factory);
+            } catch (Exception e) {
+                LOGGER.severe("Auto-Save failed: " + e.getMessage());
+            }
+            
             String encodedId = Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
             
             LOGGER.info("Starting remote simulation for: " + factoryId);
@@ -119,7 +127,6 @@ public class RemoteSimulatorController extends SimulatorController {
                 
                 
                 if (response.statusCode() == 200) {
-                	LOGGER.info("JSON RECEBIDO: " + response.body());
                     Factory remoteFactory = objectMapper.readValue(response.body(), Factory.class);
                    
                     if (!remoteFactory.isSimulationStarted()) { 

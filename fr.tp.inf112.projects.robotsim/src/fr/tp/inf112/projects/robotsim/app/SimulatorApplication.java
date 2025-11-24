@@ -26,6 +26,7 @@ public class SimulatorApplication {
 		LOGGER.config("With parameters " + Arrays.toString(args) + ".");
 		
 		final Factory factory = new Factory(200, 200, "Simple Test Puck Factory");
+		factory.setId("default.factory");
 		final Room room1 = new Room(factory, new RectangularShape(20, 20, 75, 75), "Production Room 1");
 		new Door(room1, Room.WALL.BOTTOM, 10, 20, true, "Entrance");
 		final Area area1 = new Area(room1, new RectangularShape(35, 35, 50, 50), "Production Area 1");
