@@ -28,13 +28,13 @@ public class Factory extends Component implements Canvas, Observable {
     @JsonManagedReference
     private final List<Component> components;
     
-    @JsonIgnore
-    private transient List<Observer> observers;
-    
     @JsonProperty("simulationStarted")
     private boolean simulationStarted;
 
     private static final Logger LOGGER = Logger.getLogger(Factory.class.getName());
+    
+    @JsonIgnore 
+    private transient FactoryModelChangedNotifier notifier;
 
     public Factory(final int width,
                    final int height,
@@ -42,38 +42,48 @@ public class Factory extends Component implements Canvas, Observable {
         super(null, new RectangularShape(0, 0, width, height), name);
         
         components = new ArrayList<>();
-        observers = null;
         simulationStarted = false;
+        notifier = new LocalFactoryModelChangedNotifier();
     }
     
     public Factory() {
         super(null, null, null);
         components = new ArrayList<>();
-        observers = new ArrayList<>();
+        notifier = new LocalFactoryModelChangedNotifier();
     }
     
+    public void setNotifier(FactoryModelChangedNotifier notifier) {
+        this.notifier = notifier;
+    }
+    
+    @JsonIgnore
     public List<Observer> getObservers() {
-        if (observers == null) {
-            observers = new ArrayList<>();
+    	if (notifier != null) {
+            return notifier.getObservers();
         }
-        
-        return observers;
+        return new ArrayList<>();
     }
 
     @Override
     public boolean addObserver(Observer observer) {
-        return getObservers().add(observer);
+    	if (notifier != null) {
+            return notifier.addObserver(observer);
+        }
+        return false;
     }
 
     @Override
     public boolean removeObserver(Observer observer) {
-        return getObservers().remove(observer);
+    	if (notifier != null) {
+            return notifier.removeObserver(observer);
+        }
+    	return false;
     }
     
     public void notifyObservers() {
-        for (final Observer observer : getObservers()) {
-            observer.modelChanged();
-        }
+    	if (notifier != null) {
+    		notifier.notifyObservers();
+    	}
     }
     
     public boolean addComponent(final Component component) {
