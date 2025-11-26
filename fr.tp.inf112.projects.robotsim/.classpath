@@ -14,5 +14,7 @@
 	<classpathentry kind="lib" path="/home/lucas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.5/jackson-core-2.18.5.jar"/>
 	<classpathentry kind="lib" path="/home/lucas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.5/jackson-databind-2.18.5.jar"/>
 	<classpathentry kind="lib" path="/home/lucas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar"/>
+	<classpathentry kind="lib" path="/home/lucas/.m2/repository/org/apache/kafka/kafka-clients/3.8.1/kafka-clients-3.8.1.jar"/>
+	<classpathentry kind="lib" path="/home/lucas/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

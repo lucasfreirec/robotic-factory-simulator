@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import fr.tp.inf112.projects.robotsim.model.Factory;
+import fr.tp.inf112.projects.robotsim.model.FactoryModelChangedNotifier;
 import fr.tp.inf112.projects.robotsim.model.RemoteFactoryPersistenceManager;
 
 @RestController
@@ -21,6 +24,9 @@ public class SimulationController {
 
     private static final Logger LOGGER = Logger.getLogger(SimulationController.class.getName());
     private final Map<String, Factory> activeSimulations = new ConcurrentHashMap<>();
+
+    @Autowired
+    private KafkaTemplate<String, Factory> simulationEventTemplate;
 
     private String decodeId(String encodedId) {
         try {
@@ -35,7 +41,6 @@ public class SimulationController {
     @PostMapping("/start/{id}")
     public boolean startSimulation(@PathVariable("id") String encodedId) {
         String id = decodeId(encodedId);
-        
         LOGGER.info("Request to start factory simulation for file: " + id);
 
         if (activeSimulations.containsKey(id)) {
@@ -44,19 +49,16 @@ public class SimulationController {
 
         try {
             RemoteFactoryPersistenceManager persistenceManager = new RemoteFactoryPersistenceManager(null);
-            
             Factory factory = (Factory) persistenceManager.read(id);
 
             if (factory == null) {
-                LOGGER.severe("Factory not found via Persistence Manager.");
                 return false;
             }
 
             factory.setId(id);
-            
+
             fr.tp.inf112.projects.robotsim.model.path.JGraphTDijkstraFactoryPathFinder pathFinder = 
                 new fr.tp.inf112.projects.robotsim.model.path.JGraphTDijkstraFactoryPathFinder(factory, 5);
-            
             pathFinder.buildGraph(); 
             
             for (fr.tp.inf112.projects.robotsim.model.Component c : factory.getComponents()) {
@@ -65,8 +67,11 @@ public class SimulationController {
                 }
             }
 
-            factory.startSimulation(); 
+            final FactoryModelChangedNotifier notifier = new KafkaFactoryModelChangeNotifier(factory, simulationEventTemplate);
             
+            factory.setNotifier(notifier);
+
+            factory.startSimulation(); 
             activeSimulations.put(id, factory);
             
             LOGGER.info("Simulation started successfully.");
@@ -87,8 +92,6 @@ public class SimulationController {
     @PostMapping("/stop/{id}")
     public boolean stopSimulation(@PathVariable("id") String encodedId) {
         String id = decodeId(encodedId);
-        LOGGER.info("Request to stop factory simulation: " + id);
-
         Factory factory = activeSimulations.remove(id);
         
         if (factory == null) {

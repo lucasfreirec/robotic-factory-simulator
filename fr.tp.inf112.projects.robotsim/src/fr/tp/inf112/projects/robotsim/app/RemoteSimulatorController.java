@@ -1,22 +1,16 @@
 package fr.tp.inf112.projects.robotsim.app;
 
-import java.io.IOException;
 import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Base64;
-import java.util.List;
 import java.util.logging.Logger;
-
-import javax.swing.SwingUtilities;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.jsontype.BasicPolymorphicTypeValidator;
 import com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator;
 
-import fr.tp.inf112.projects.canvas.controller.Observer;
 import fr.tp.inf112.projects.canvas.model.Canvas;
 import fr.tp.inf112.projects.canvas.model.CanvasPersistenceManager;
 import fr.tp.inf112.projects.canvas.model.impl.BasicVertex;
@@ -24,26 +18,29 @@ import fr.tp.inf112.projects.robotsim.model.Component;
 import fr.tp.inf112.projects.robotsim.model.Factory;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
 
+import fr.tp.inf112.projects.robotsim.app.FactorySimulationEventConsumer;
+
+import javax.swing.SwingUtilities;
+
 public class RemoteSimulatorController extends SimulatorController {
 
     private static final Logger LOGGER = Logger.getLogger(RemoteSimulatorController.class.getName());
-    
     private static final String SERVICE_URL = "http://localhost:8181/simulation";
     
     private final HttpClient httpClient;
     private final ObjectMapper objectMapper;
     
-    private volatile boolean isRunning = false;
+    private FactorySimulationEventConsumer kafkaConsumer; 
+    private volatile boolean simulationRunning = false;
 
     public RemoteSimulatorController(Factory factoryModel, CanvasPersistenceManager persistenceManager) {
         super(factoryModel, persistenceManager);
-        
         this.httpClient = HttpClient.newHttpClient();
         this.objectMapper = createConfiguredObjectMapper();
     }
 
     private ObjectMapper createConfiguredObjectMapper() {
-        PolymorphicTypeValidator typeValidator = BasicPolymorphicTypeValidator.builder()
+    	PolymorphicTypeValidator typeValidator = BasicPolymorphicTypeValidator.builder()
                 .allowIfSubType(PositionedShape.class.getPackageName())
                 .allowIfSubType(Component.class.getPackageName())
                 .allowIfSubType(BasicVertex.class.getPackageName())
@@ -52,25 +49,31 @@ public class RemoteSimulatorController extends SimulatorController {
                 .build();
 
         ObjectMapper mapper = new ObjectMapper();
+        
         mapper.activateDefaultTyping(typeValidator, ObjectMapper.DefaultTyping.NON_FINAL);
+        
         return mapper;
     }
+
+    public String getFactoryId() {
+        return getFactory().getId();
+    }
+
+    @Override
+    public boolean isAnimationRunning() {
+    	return this.simulationRunning;
+    	}
 
     @Override
     public void startAnimation() {
         try {
-        	Factory factory = getFactory();
-            String factoryId = getFactory().getId();
-            LOGGER.info("Auto-saving factory before starting simulation...");
-            try {
-                getPersistenceManager().persist(factory);
-            } catch (Exception e) {
-                LOGGER.severe("Auto-Save failed: " + e.getMessage());
-            }
+            Factory factory = getFactory();
+            getPersistenceManager().persist(factory);
             
+            String factoryId = factory.getId();
             String encodedId = Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
             
-            LOGGER.info("Starting remote simulation for: " + factoryId);
+            LOGGER.info("Starting remote simulation via HTTP Trigger: " + factoryId);
 
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(new URI(SERVICE_URL + "/start/" + encodedId))
@@ -80,8 +83,15 @@ public class RemoteSimulatorController extends SimulatorController {
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
             if (response.statusCode() == 200 && Boolean.parseBoolean(response.body())) {
-                isRunning = true;
-                new Thread(() -> updateViewerLoop()).start();
+                this.simulationRunning = true;
+                LOGGER.info("Servidor iniciou. Conectando ao Kafka...");
+                
+                new Thread(() -> {
+                    FactorySimulationEventConsumer consumer = 
+                        new FactorySimulationEventConsumer(this, objectMapper);
+                    consumer.consumeMessages();
+                }).start();
+                
             } else {
                 LOGGER.severe("Failed to start remote simulation. Code: " + response.statusCode());
             }
@@ -93,12 +103,13 @@ public class RemoteSimulatorController extends SimulatorController {
 
     @Override
     public void stopAnimation() {
-        isRunning = false;
+    	this.simulationRunning = false;
         try {
+            
             String factoryId = getFactory().getId();
             String encodedId = Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
             
-            LOGGER.info("Stopping remote simulation for: " + factoryId);
+            LOGGER.info("Stopping remote simulation...");
 
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(new URI(SERVICE_URL + "/stop/" + encodedId))
@@ -112,58 +123,41 @@ public class RemoteSimulatorController extends SimulatorController {
         }
     }
 
-    private void updateViewerLoop() {
-        while (isRunning) { 
+    public void updateModelFromKafka(Factory remoteFactory) {
+        SwingUtilities.invokeLater(() -> {
             try {
-                String factoryId = getFactory().getId();
-                String encodedId = java.util.Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
-                
-                HttpRequest request = HttpRequest.newBuilder()
-                        .uri(new URI(SERVICE_URL + "/" + encodedId))
-                        .GET()
-                        .build();
+                Factory localFactory = (Factory) getCanvas();
 
-                HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-                
-                
-                if (response.statusCode() == 200) {
-                    Factory remoteFactory = objectMapper.readValue(response.body(), Factory.class);
-                   
-                    if (!remoteFactory.isSimulationStarted()) { 
-                        isRunning = false;
-                        break;
-                    }
-                    
-                    SwingUtilities.invokeLater(() -> setCanvas(remoteFactory));
+                if (localFactory == null) {
+                    setCanvas(remoteFactory);
+                    return;
                 }
 
-                Thread.sleep(100);
+                if (remoteFactory.isSimulationStarted() != localFactory.isSimulationStarted()) {
+                    localFactory.setSimulationStarted(remoteFactory.isSimulationStarted());
+                }
 
+                localFactory.getComponents().clear();
+                localFactory.getComponents().addAll(remoteFactory.getComponents());
+
+                for (Component c : localFactory.getComponents()) {
+                    c.setFactory(localFactory);
+                }
+
+                localFactory.notifyObservers();
+                
             } catch (Exception e) {
-                LOGGER.severe("Erro no loop: " + e.getMessage());
-                try { Thread.sleep(1000); } catch (InterruptedException ie) {}
+                LOGGER.severe("Erro UI: " + e.getMessage());
             }
-        }
+        });
     }
 
     @Override
     public void setCanvas(final Canvas canvasModel) {
-        Factory currentFactory = getFactory();
-        
-        if (currentFactory == null) {
-            super.setCanvas(canvasModel);
-            return;
+        super.setCanvas(canvasModel);
+        if (getFactory() != null) {
+             getFactory().notifyObservers();
         }
-
-        final List<Observer> observers = currentFactory.getObservers();
-        
-        super.setCanvas(canvasModel); 
-        
-        for (final Observer observer : observers) {
-            getFactory().addObserver(observer);
-        }
-        
-        getFactory().notifyObservers();
     }
     
     private Factory getFactory() {
