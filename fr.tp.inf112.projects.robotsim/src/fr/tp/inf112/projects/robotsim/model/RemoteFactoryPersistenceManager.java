@@ -58,7 +58,6 @@ public class RemoteFactoryPersistenceManager extends AbstractCanvasPersistenceMa
             final ObjectOutputStream objectOutputStream = new ObjectOutputStream(bufOutputStream);
             objectOutputStream.writeObject(canvasModel);
             objectOutputStream.flush();
-            LOGGER.info("Write+Flush");
         }
     }
 

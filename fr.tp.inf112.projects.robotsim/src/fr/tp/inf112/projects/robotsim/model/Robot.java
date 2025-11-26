@@ -1,6 +1,7 @@
 package fr.tp.inf112.projects.robotsim.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
@@ -168,20 +169,25 @@ public class Robot extends Component {
         int[] dy = {-1, 0, 1, 0};
         int[] dx = {0, 1, 0, -1};
 
-        Position currentPosition = getPosition();
-        Random rand = new Random();
-        int offset = rand.nextInt(4);
+        List<Integer> directions = new ArrayList<>();
+        directions.add(0); directions.add(1); directions.add(2); directions.add(3);
+        Collections.shuffle(directions);
 
-        Position newPosition = new Position(currentPosition.getxCoordinate()+dx[offset]*getSpeed(),
-                currentPosition.getyCoordinate()+dy[offset]*getSpeed());
-
-        final PositionedShape shape = new RectangularShape(newPosition.getxCoordinate(),
-                newPosition.getyCoordinate(),
+        for (int dir : directions) {
+            Position candidate = new Position(
+                getPosition().getxCoordinate() + dx[dir] * getSpeed(),
+                getPosition().getyCoordinate() + dy[dir] * getSpeed()
+            );
+        
+        final PositionedShape shape = new RectangularShape(candidate.getxCoordinate(),
+                candidate.getyCoordinate(),
                 2,
                 2);
-        if (getFactory().hasObstacleAt(shape) || getFactory().hasMobileComponentAt(shape, this)) return null;
-
-        return newPosition;
+        
+        if (!getFactory().hasObstacleAt(shape) || !getFactory().hasMobileComponentAt(shape, this)) return candidate;
+        }
+        
+        return null;
     }
     
     private void computePathToCurrentTargetComponent() {

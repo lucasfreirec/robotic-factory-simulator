@@ -15,7 +15,7 @@ public class SimulatorServer {
         try (
                 ServerSocket serverSocket = new ServerSocket(8000);
         ) {
-            System.out.println("Server started ");
+            LOGGER.info("Server started ");
 
             while (true) {
                 try (Socket clientSocket = serverSocket.accept()) {
@@ -41,7 +41,7 @@ public class SimulatorServer {
                         LOGGER.info("The type of object sent to the server is invalid.");
                     }
 
-                    System.out.println("Closing connection.");
+                    LOGGER.info("Closing connection.");
                 }
                 catch (IOException ex) {
                     LOGGER.severe("Server communication problem: " + ex.getMessage());
