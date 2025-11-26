@@ -16,7 +16,7 @@ public class SimulationServiceUtils {
     private static final String TOPIC_PREFIX = "simulation-topic-";
 
     public static String getTopicName(String factoryId) {
-        String safeId = Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
+        String safeId = Base64.getUrlEncoder().withoutPadding().encodeToString(factoryId.getBytes());
         return TOPIC_PREFIX + safeId;
     }
 

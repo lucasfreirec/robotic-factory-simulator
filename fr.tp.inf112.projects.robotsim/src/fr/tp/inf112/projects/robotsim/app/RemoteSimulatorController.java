@@ -83,7 +83,7 @@ public class RemoteSimulatorController extends SimulatorController {
             getPersistenceManager().persist(factory);
             
             String factoryId = factory.getId();
-            String encodedId = Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
+            String encodedId = Base64.getUrlEncoder().withoutPadding().encodeToString(factoryId.getBytes());
             
             LOGGER.info("Starting remote simulation via HTTP Trigger: " + factoryId);
 
