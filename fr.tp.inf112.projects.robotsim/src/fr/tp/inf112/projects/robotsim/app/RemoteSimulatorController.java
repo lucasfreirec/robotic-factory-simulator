@@ -79,10 +79,18 @@ public class RemoteSimulatorController extends SimulatorController {
     @Override
     public void startAnimation() {
         try {
-            Factory factory = getFactory();
-            getPersistenceManager().persist(factory);
-            
+            Factory factory = getFactory();            
             String factoryId = factory.getId();
+            
+            if (factoryId == null || factoryId.isEmpty()) {
+                javax.swing.JOptionPane.showMessageDialog(null, 
+                        "You need to save the factory before starting a simulation", 
+                        "Warning", 
+                        javax.swing.JOptionPane.WARNING_MESSAGE);
+                LOGGER.warning("You need to save the factory before starting a simulation .");
+                return;
+            }
+            
             String encodedId = Base64.getUrlEncoder().withoutPadding().encodeToString(factoryId.getBytes());
             
             LOGGER.info("Starting remote simulation via HTTP Trigger: " + factoryId);
@@ -96,7 +104,7 @@ public class RemoteSimulatorController extends SimulatorController {
 
             if (response.statusCode() == 200 && Boolean.parseBoolean(response.body())) {
                 this.simulationRunning = true;
-                LOGGER.info("Servidor iniciou. Conectando ao Kafka...");
+                LOGGER.info("Server started. Connecting to Kafka...");
                 
                 new Thread(() -> {
                     kafkaConsumer = new FactorySimulationEventConsumer(this, objectMapper);
@@ -104,7 +112,7 @@ public class RemoteSimulatorController extends SimulatorController {
                 }).start();
                 
             } else {
-                LOGGER.severe("Failed to start remote simulation. Code: " + response.statusCode());
+                LOGGER.severe("Failed to start remote simulation: " + response.statusCode());
             }
 
         } catch (Exception e) {
