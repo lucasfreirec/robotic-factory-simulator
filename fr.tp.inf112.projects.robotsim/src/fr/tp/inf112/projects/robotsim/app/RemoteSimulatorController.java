@@ -7,20 +7,20 @@ import java.net.http.HttpResponse;
 import java.util.Base64;
 import java.util.logging.Logger;
 
+import javax.swing.SwingUtilities;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.jsontype.BasicPolymorphicTypeValidator;
 import com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator;
 
+import fr.tp.inf112.projects.canvas.controller.Observer;
 import fr.tp.inf112.projects.canvas.model.Canvas;
 import fr.tp.inf112.projects.canvas.model.CanvasPersistenceManager;
 import fr.tp.inf112.projects.canvas.model.impl.BasicVertex;
 import fr.tp.inf112.projects.robotsim.model.Component;
 import fr.tp.inf112.projects.robotsim.model.Factory;
+import fr.tp.inf112.projects.robotsim.model.LocalFactoryModelChangedNotifier;
 import fr.tp.inf112.projects.robotsim.model.shapes.PositionedShape;
-
-import fr.tp.inf112.projects.robotsim.app.FactorySimulationEventConsumer;
-
-import javax.swing.SwingUtilities;
 
 public class RemoteSimulatorController extends SimulatorController {
 
@@ -29,6 +29,7 @@ public class RemoteSimulatorController extends SimulatorController {
     
     private final HttpClient httpClient;
     private final ObjectMapper objectMapper;
+    private final LocalFactoryModelChangedNotifier controllerNotifier;
     
     private FactorySimulationEventConsumer kafkaConsumer; 
     private volatile boolean simulationRunning = false;
@@ -37,10 +38,11 @@ public class RemoteSimulatorController extends SimulatorController {
         super(factoryModel, persistenceManager);
         this.httpClient = HttpClient.newHttpClient();
         this.objectMapper = createConfiguredObjectMapper();
+        this.controllerNotifier = new LocalFactoryModelChangedNotifier();
     }
 
     private ObjectMapper createConfiguredObjectMapper() {
-    	PolymorphicTypeValidator typeValidator = BasicPolymorphicTypeValidator.builder()
+        PolymorphicTypeValidator typeValidator = BasicPolymorphicTypeValidator.builder()
                 .allowIfSubType(PositionedShape.class.getPackageName())
                 .allowIfSubType(Component.class.getPackageName())
                 .allowIfSubType(BasicVertex.class.getPackageName())
@@ -61,8 +63,18 @@ public class RemoteSimulatorController extends SimulatorController {
 
     @Override
     public boolean isAnimationRunning() {
-    	return this.simulationRunning;
-    	}
+        return this.simulationRunning;
+    }
+
+    @Override
+    public boolean addObserver(Observer observer) {
+        return controllerNotifier.addObserver(observer);
+    }
+
+    @Override
+    public boolean removeObserver(Observer observer) {
+        return controllerNotifier.removeObserver(observer);
+    }
 
     @Override
     public void startAnimation() {
@@ -87,9 +99,8 @@ public class RemoteSimulatorController extends SimulatorController {
                 LOGGER.info("Servidor iniciou. Conectando ao Kafka...");
                 
                 new Thread(() -> {
-                    FactorySimulationEventConsumer consumer = 
-                        new FactorySimulationEventConsumer(this, objectMapper);
-                    consumer.consumeMessages();
+                    kafkaConsumer = new FactorySimulationEventConsumer(this, objectMapper);
+                    kafkaConsumer.consumeMessages();
                 }).start();
                 
             } else {
@@ -103,9 +114,8 @@ public class RemoteSimulatorController extends SimulatorController {
 
     @Override
     public void stopAnimation() {
-    	this.simulationRunning = false;
+        this.simulationRunning = false;
         try {
-            
             String factoryId = getFactory().getId();
             String encodedId = Base64.getUrlEncoder().encodeToString(factoryId.getBytes());
             
@@ -126,26 +136,7 @@ public class RemoteSimulatorController extends SimulatorController {
     public void updateModelFromKafka(Factory remoteFactory) {
         SwingUtilities.invokeLater(() -> {
             try {
-                Factory localFactory = (Factory) getCanvas();
-
-                if (localFactory == null) {
-                    setCanvas(remoteFactory);
-                    return;
-                }
-
-                if (remoteFactory.isSimulationStarted() != localFactory.isSimulationStarted()) {
-                    localFactory.setSimulationStarted(remoteFactory.isSimulationStarted());
-                }
-
-                localFactory.getComponents().clear();
-                localFactory.getComponents().addAll(remoteFactory.getComponents());
-
-                for (Component c : localFactory.getComponents()) {
-                    c.setFactory(localFactory);
-                }
-
-                localFactory.notifyObservers();
-                
+                setCanvas(remoteFactory);
             } catch (Exception e) {
                 LOGGER.severe("Erro UI: " + e.getMessage());
             }
@@ -155,9 +146,7 @@ public class RemoteSimulatorController extends SimulatorController {
     @Override
     public void setCanvas(final Canvas canvasModel) {
         super.setCanvas(canvasModel);
-        if (getFactory() != null) {
-             getFactory().notifyObservers();
-        }
+        controllerNotifier.notifyObservers();
     }
     
     private Factory getFactory() {
